@@ -17,12 +17,13 @@
 
 <body>
   <!--По семантике здесь будет заголовок первого уровня-->
-  <!-- <h1>Главная страница</h1>   -->
+  <h1>Главная страница игровой территории GAME OVER</h1>
 
   <img src="img/logo.svg" alt="Логотип сайта GO"> <!--Добавил логотип-->
 
   <h2>Меню</h2>
   <ul>
+    <!-- Добавил якорные ссылки на разделы -->
     <li>
       <a href="#our_halls">Залы</a>
     </li>
@@ -30,11 +31,9 @@
       <a href="#about">О нас</a>
     </li>
     <li>
-      <!--По ТЗ нет описания данной страницы. По умолчанию считаю что ведет на контакты-->
-      <a href="#contacts">Бронь</a>
+      <a href="#reservation">Бронь</a>
     </li>
     <li>
-      <!--Ссылка никуда не ведет пока не будет уточнений в ТЗ-->
       <a href="#reviews">Отзывы</a>
     </li>
     <li>
@@ -42,145 +41,189 @@
     </li>
   </ul>
 
-  <h3>У нас есть всё для классного отдыха с друзьями!</h3>
-  <ul>
-    <li> 
-      <figure>
-        <img src="img/vr.jpg" alt="VR очки" height="228"> <!--Для каждой пикчи установил высоту-->
-        <figcaption aria-hidden="true">VR очки</figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure>
-        <img src="img/audio.jpg" alt="Руки диджея за пультом аудио-системы высокого качества" height="228">
-        <figcaption aria-hidden="true">Аудио-система 5.1 с отличным звуком</figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure>
-        <img src="img/micro.jpg" alt="Девушка поет в микрофон" height="228">
-        <figcaption aria-hidden="true">Караоке (4 микрофона)</figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure>
-        <img src="img/game.jpg" alt="Настольная игра на столе с зеркалами" height="228">
-        <figcaption aria-hidden="true">Настольные игры</figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure>
-        <img src="img/netflix.jpg" alt="Монитор с отображением заставки Netflix" height="228">
-        <figcaption aria-hidden="true">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
-      </figure>
-    </li>
-    <li>
-      <figure>
-        <img src="img/sony.jpg" alt="Запущена игра на консоле Playstation, подключенной к монитору" height="228">
-        <figcaption aria-hidden="true">PlayStation 5</figcaption>
-      </figure>
-    </li>
-  </ul>
+  <!-- Добавил section по семантике -->
+  <section>
+    <h3>У нас есть всё для классного отдыха с друзьями!</h3>
+    <ul>
+      <li> 
+        <figure>
+          <img src="img/vr.jpg" alt="VR очки" height="228"> <!--Для каждой пикчи установил высоту-->
+          <figcaption aria-hidden="true">VR очки</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/audio.jpg" alt="Руки диджея за пультом аудио-системы высокого качества" height="228">
+          <figcaption aria-hidden="true">Аудио-система 5.1 с отличным звуком</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/micro.jpg" alt="Девушка поет в микрофон" height="228">
+          <figcaption aria-hidden="true">Караоке (4 микрофона)</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/game.jpg" alt="Настольная игра на столе с зеркалами" height="228">
+          <figcaption aria-hidden="true">Настольные игры</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/netflix.jpg" alt="Монитор с отображением заставки Netflix" height="228">
+          <figcaption aria-hidden="true">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/sony.jpg" alt="Запущена игра на консоле Playstation, подключенной к монитору" height="228">
+          <figcaption aria-hidden="true">PlayStation 5</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>
 
-  <h3 id="our_halls">Наши залы</h3>
-  <!--ссылкы ведут на несуществующие страницы, т.к. в задании (модуль 1 урок 3) нет указания по созданию страниц-->
-  <ol>
-    <li>
-      <a href="vibes.html">80's vibes</a>
-    </li>
-    <li>
-      <a href="starwars.html">Star wars</a>
-    </li>
-    <li>
-      <a href="wildwest.html">Wild west</a>
-    </li>
-    <li>s
-      <a href="neon.html">Neon Style</a>
-    </li>
-  </ol>
+  <!-- Добавил section по семантике -->
+  <section>
+    <h3 id="our_halls">Наши залы</h3>
+    <!--ссылкы ведут на несуществующие страницы, т.к. в задании (модуль 1 урок 3) нет указания по созданию страниц-->
+    <ol>
+      <li>
+        <a href="vibes.html">80's vibes</a>
+      </li>
+      <li>
+        <a href="starwars.html">Star wars</a>
+      </li>
+      <li>
+        <a href="wildwest.html">Wild west</a>
+      </li>
+      <li>s
+        <a href="neon.html">Neon Style</a>
+      </li>
+    </ol>
+  </section>
 
-  <h3>Забронировать</h3>
-  <form id="reserve" action="https://jsonplaceholder.typicode.com/posts" method="post">
-    <fieldset>
-      <input type="radio" name="room" value="80's">80's vibes
-      <input type="radio" name="room" value="star_wars">Star wars
-      <input type="radio" name="room" value="wild_west">Wild west
-      <input type="radio" name="room" value="neon">Neon Style
-    </fieldset>
-    <fieldset>
-      <legend>Собери набор развлечений</legend>
+  <!-- Добавил section по семантике -->
+  <section>
+    <h3 id="reservation">Забронировать зал просто</h3>
+    <form id="reserve" action="https://jsonplaceholder.typicode.com/posts" method="post">
       <fieldset>
-        <legend>Приставка:</legend>
-        <input type="radio" name="console" value="playstation">PlayStation
-        <input type="radio" name="console" value="sega">Sega Mega Drive
-        <input type="radio" name="console" value="xbox">X-Box One S
-        <input type="radio" name="console" value="dendy">Dendy
+        <legend>Выбери зал</legend>
+        <input type="radio" name="room" value="80's">80's vibes
+        <input type="radio" name="room" value="star_wars">Star wars
+        <input type="radio" name="room" value="wild_west">Wild west
+        <input type="radio" name="room" value="neon">Neon Style
       </fieldset>
       <fieldset>
-        <legend>Настольные игры:</legend>
-        <input type="checkbox" name="boarding_game" value="jenga">Jenga
-        <input type="checkbox" name="boarding_game" value="momopoly">Monopoly
-        <input type="checkbox" name="boarding_game" value="manchkin">Манчкин
-        <input type="checkbox" name="boarding_game" value="alias">Alias
+        <legend>Собери набор развлечений</legend>
+        <fieldset>
+          <legend>Приставка:</legend>
+          <input type="radio" name="console" value="playstation">PlayStation
+          <input type="radio" name="console" value="sega">Sega Mega Drive
+          <input type="radio" name="console" value="xbox">X-Box One S
+          <input type="radio" name="console" value="dendy">Dendy
+        </fieldset>
+        <fieldset>
+          <legend>Настольные игры:</legend>
+          <input type="checkbox" name="boarding_game" value="jenga">Jenga
+          <input type="checkbox" name="boarding_game" value="momopoly">Monopoly
+          <input type="checkbox" name="boarding_game" value="manchkin">Манчкин
+          <input type="checkbox" name="boarding_game" value="alias">Alias
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительно:</legend>
+          <input type="checkbox" name="extra" value="karaoke">Караоке
+          <input type="checkbox" name="extra" value="vr">VR
+        </fieldset>
       </fieldset>
+    
       <fieldset>
-        <legend>Дополнительно:</legend>
-        <input type="checkbox" name="extra" value="karaoke">Караоке
-        <input type="checkbox" name="extra" value="vr">VR
-      </fieldset>
-    </fieldset>
-    <fieldset>
-      <legend>Выбери дату и время</legend>
-      <label for="date">Дата<abbr title="required">*</abbr></label>
+        <legend>Выбери дату и время</legend>
+        <label for="date">Дата<abbr title="required">*</abbr></label>
         <input id="date" type="date" required>
-      <label for="time">Время<abbr title="required">*</abbr></label>
+        <label for="time">Время<abbr title="required">*</abbr></label>
         <input id="time" type="time" required>
       <br>
-      <label for="persons">Количество человек<abbr title="required">*</abbr></label>
+
+        <label for="persons">Количество человек<abbr title="required">*</abbr></label>
         <input id="persons" type="number" required>
-      <br>
-      <label for="first_name">Имя<abbr title="required">*</abbr></label>
+        <br>
+
+        <label for="first_name">Имя<abbr title="required">*</abbr></label>
         <input id="first_name" type="text" required>
       <br>
-      <label for="second_name">Фамилия<abbr title="required">*</abbr></label>
+
+        <label for="second_name">Фамилия<abbr title="required">*</abbr></label>
         <input id="second_name" type="text" required>
       <br>
-      <label for="tel">Номер телефона<abbr title="required">*</abbr></label>
+      
+        <label for="tel">Номер телефона<abbr title="required">*</abbr></label>
         <input id="tel" type="tel" required>
       <br>
-      <label>
+      
+        <label>
         <input type="checkbox">Я старше 18 лет
-      </label>
-    </fieldset>
-  </form>
+        </label>
+      </fieldset>
+    </form>
 
-  <button type="submit" form="reserve">Забронировать</button>
-  <label>
-    <input type="checkbox" form="reserve" required>Согласен на обработку данных
-  </label>
+    <button type="submit" form="reserve">Забронировать</button>
+    <label>
+      <input type="checkbox" form="reserve" required>Согласен на обработку данных
+    </label>
+  </section>
 
-  <h3 id="about">О нас</h3>
-  <p>Для наших гостей мы создали <em>концептуально новое игровое пространство виртуальной реальности</em> в центральной части города.</p> <!--текст имеет подчеркнутый акцент-->
-  <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира</p>
+  <!-- Добавил section по семантике -->
+  <section>
+    <h3 id="about">О нас</h3>
+    <p>Для наших гостей мы создали <em>концептуально новое игровое пространство виртуальной реальности</em> в центральной части города.</p> <!--текст имеет подчеркнутый акцент-->
+    <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира</p>
+  
+    <!--Исходя из ТЗ считаю что здесь используется цитата-->
+    <figure>
+      <blockquote><b>GAME OVER</b> - это место незабываемых впечатлений</blockquote>
+      <figcaption><i>Аркадий Абрамкин, создатель игровой территории GAME OVER</i></figcaption>
+    </figure>  
+  </section>
 
-  <!--Исходя из ТЗ считаю что здесь используется цитата-->
-  <figure>
-    <blockquote><b>GAME OVER</b> - это место незабываемых впечатлений</blockquote>
-    <figcaption><i>Аркадий Абрамкин, создатель игровой территории GAME OVER</i></figcaption>
-  </figure>
+  <section>
+    <h3 id="reviews">Отзывы посетителей</h3>
+    <ul>
+      <li>
+        <p>Макс Самойлов</p>
+        <p>Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
+        <!-- <img src="" alt=""> -->  
+      </li>
+      <li>
+        <p>Оксана Григорьева</p>
+        <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас вгороде больше нет подобных заведений</p>
+        <!-- <img src="" alt=""> -->  
+      </li>
+      <li>
+        <p>Никита Ященко</p>
+        <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космосаы</p>
+        <!-- <img src="" alt=""> -->  
+      </li>
+    </ul>
+  </section>
 
-  <h3 id="contacts">Контакты</h3>
-  <p>г. Москва ул. Аквамарина, 16</p>
-  <a href="tel:+79509302893">8(950)930-28-93</a>
-  <br>
-  <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-  <ul>
-    <li>
-      <a href="https://vk.com">Vkontakte</a>
-    </li>
-    <li>
-      <a href="https://web.telegram.org">Telegram</a>
-    </li>
-  </ul>
+  <!-- Добавил section по семантике -->
+  <section>
+    <h3 id="contacts">Контакты</h3>
+    <p>г. Москва ул. Аквамарина, 16</p>
+    <a href="tel:+79509302893">8(950)930-28-93</a>
+    <br>
+    <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+    <ul>
+      <li>
+        <a href="https://vk.com">Vkontakte</a>
+      </li>
+      <li>
+        <a href="https://web.telegram.org">Telegram</a>
+      </li>
+    </ul>
+  </section>
+
 </body>
 </html>
