@@ -1,6 +1,6 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */                        /*стили уже есть в global-style.css*/
 
 body {
     font-family: Arial, sans-serif;
@@ -38,11 +38,11 @@ blockquote {
     text-transform: uppercase;
 }
 
-.wrapper {
+/* .wrapper {
     width: 1180px;
-    /* padding: 30px; */
+    padding: 30px;
     margin: 0 auto;
-}
+} */                     /*уже есть стили для обертки .container в global_style.css*/
 
 .header {
     position: relative; /*задаю относительное позиционирование для родителя псевдоэлемента before*/
