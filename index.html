@@ -12,86 +12,86 @@
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style/style.css">
   <title>Игровая территория GAME OVER</title>
 </head>
 
 
-<body>
+<body class="page">
   <div class="container"><!-- Подключили обертку  -->
     
     <header class="header">
-      <h1>GAME OVER</h1>
-      <p>Новый формат игр и отдыха</p>
+      <h1 class="header__title">GAME OVER</h1>
+      <p class="header__text">Новый формат игр и отдыха</p>
     </header>
     
     <main>
-      <section>
-        <h2 id="our_halls">Наши залы</h2>
+      <section class="halls">
+        <h2 class="halls__title heading2" id="our_halls">Наши залы</h2>
         <!--ссылкы сделал сами иконки-->
-        <ul>
-          <li>
-            <figure class="room">
-              <figcaption class="room-name">80's vibes</figcaption>
+        <ul class="halls__list">
+          <li class="halls__item">
+            <figure class="halls__room">
+              <figcaption class="halls__room-name">80's vibes</figcaption>
               <img src="img/80s_vibes.jpg" alt="Комната в стиле 80-х">
             </figure>
           </li>
-          <li>
-            <figure class="room">
-              <figcaption class="room-name">Star wars</figcaption>
+          <li class="halls__item">
+            <figure class="halls__room">
+              <figcaption class="halls__room-name">Star wars</figcaption>
               <img src="img/star_wars.jpg" alt="Комната в стиле звездных войн">
             </figure>
           </li>
-          <li>
-            <figure class="room">
-              <figcaption class="room-name">Wild west</figcaption>
+          <li class="halls__item">
+            <figure class="halls__room">
+              <figcaption class="halls__room-name">Wild west</figcaption>
               <img src="img/wild_west.jpg" alt="Комната в стиле Дикого Запада">
             </figure>
           </li>
-          <li>
-            <figure class="room">
-              <figcaption class="room-name">Neon Style</figcaption>
+          <li class="halls__item">
+            <figure class="halls__room">
+              <figcaption class="halls__room-name">Neon Style</figcaption>
               <img src="img/neon_style.jpg" alt="Комната в стиле Неон-диско">
             </figure>
           </li>
         </ul>
       </section>
     
-      <section>
-        <h2 id="reservation">Забронировать</h2>
-        <form id="reserve" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <fieldset>
-            <!-- <legend>Выбери зал</legend> -->  <!--нет в макете Figma-->
+      <section class="reserve">
+        <h2 class="reserve__title heading2" id="reservation">Забронировать</h2>
+        <form class="reserve__form" id="reserve-id" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <fieldset class="reserve__hall">
+            <!-- <legend class="reserve__hall-legend">Выбери зал</legend> -->  <!--нет в макете Figma-->
             <input type="radio" name="room" value="80's">80's vibes
             <input type="radio" name="room" value="star_wars">star wars
             <input type="radio" name="room" value="wild_west">wild west
             <input type="radio" name="room" value="neon">neon style
           </fieldset>
-          <fieldset>
-            <legend>Собери набор развлечений</legend>
-            <fieldset>
-              <legend>Приставка:</legend>
+          <fieldset class="reserve__service">
+            <legend class="reserve__service-legend">Собери набор развлечений</legend>
+            <fieldset class="reserve__console">
+              <legend class="reserve__console-legend">Приставка:</legend>
               <input type="radio" name="console" value="playstation">PlayStation
               <input type="radio" name="console" value="sega">Sega Mega Drive
               <input type="radio" name="console" value="xbox">X-Box One S
               <input type="radio" name="console" value="dendy">Dendy
             </fieldset>
-            <fieldset>
-              <legend>Настольные игры:</legend>
+            <fieldset class="reserve__border-games">
+              <legend class="reserve__border-games-legend">Настольные игры:</legend>
               <input type="checkbox" name="boarding_game" value="jenga">Jenga
               <input type="checkbox" name="boarding_game" value="momopoly">Monopoly
               <input type="checkbox" name="boarding_game" value="manchkin">Манчкин
               <input type="checkbox" name="boarding_game" value="alias">Alias
             </fieldset>
-            <fieldset>
-              <legend>Дополнительно:</legend>
+            <fieldset class="reserve__extra">
+              <legend class="reserve__extra-legend">Дополнительно:</legend>
               <input type="checkbox" name="extra" value="karaoke">Караоке
               <input type="checkbox" name="extra" value="vr">VR
             </fieldset>
           </fieldset>
         
-          <fieldset>
-            <legend>Выбери дату и время</legend>
+          <fieldset class="reserve__data">
+            <legend class="reserve__data-legend">Выбери дату и время</legend>
             <label for="date">Дата<abbr title="required">*</abbr></label>
             <input id="date" type="date" required>
             <label for="time">Время<abbr title="required">*</abbr></label>
@@ -110,56 +110,56 @@
           </fieldset>
         </form>
     
-        <button type="submit" form="reserve">Забронировать</button>
+        <button class="reserve__button" type="submit" form="reserve-id">Забронировать</button>
         <label>
-          <input type="checkbox" form="reserve" required>Согласен на обработку данных
+          <input class="reserve__personal-data" type="checkbox" form="reserve-id" required>Согласен на обработку данных
         </label>
       </section>
     
-      <section сlass="about-wrapper">
-        <h2 id="about">О нас</h2>
-        <p>Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
-        <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира</p>
+      <section class="about">
+        <h2 class="about__title heading2">О нас</h2>
+        <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+        <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира</p>
       
         <!--цитата-->
-        <figure class="bq-wrap">
-          <blockquote>GAME OVER &mdash; <br>это место незабываемых впечатлений</blockquote>
-          <img src="img/blockquote.png" alt="sfsdg">
-          <figcaption>Аркадий Абрамкин, создатель игровой территории GAME OVER</figcaption>
+        <figure class="about__bq bq-wrap">
+          <blockquote class="about__bq-text">GAME OVER &mdash; <br>это место незабываемых впечатлений</blockquote>
+          <img class="about__bq-img" src="img/blockquote.png" alt="sfsdg">
+          <figcaption class="about__bq-autor">Аркадий Абрамкин, создатель игровой территории GAME OVER</figcaption>
         </figure>  
       </section>
   
-      <section>
-        <h2>Частые вопросы</h2>
-        <ul class="faq">
-          <li>Можно ли забронировать комнату онлайн?</li>
-          <li>Могут ли мне вернуть деньги за бронь?</li>
-          <li>Какая комната самая популярная?</li>
-          <li>Как получить VIP комнату?</li>
-          <li>Какая комната самая популярная?</li>
+      <section class="faq">
+        <h2 class="faq__title heading2">Частые вопросы</h2>
+        <ul class="faq__list">
+          <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
+          <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
+          <li class="faq__item">Какая комната самая популярная?</li>
+          <li class="faq__item">Как получить VIP комнату?</li>
+          <li class="faq__item">Какая комната самая популярная?</li>
         </ul>
       </section>
     </main>
     
     <footer>
-      <section>
-        <h2 id="contacts">Контакты</h2>
-        <p class="location">г. Москва <br>ул. Аквамарина, 16</p>
-        <a class="tel" href="tel:+79509302893">8 (950) 930 - 28 - 93</a>
+      <section class="footer">
+        <h2 class="footer__title heading2">Контакты</h2>
+        <p class="footer__location">г. Москва <br>ул. Аквамарина, 16</p>
+        <a class="footer__link-tel" href="tel:+79509302893">8 (950) 930 - 28 - 93</a>
         <br>
-        <a class="mail" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-        <ul class="social-media">
-          <li class="social-item">
-            <a class="social-link social-vk" href="https://vk.com"  aria-label="Ссылка на Vkontakte"></a>
+        <a class="footer__link-mail" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+        <ul class="footer__sm-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link_vk" href="https://vk.com"  aria-label="Ссылка на Vkontakte"></a>
           </li>
-          <li class="social-item">
-            <a class="social-link social-tg" href="https://web.telegram.org" aria-label="Ссылка на Telegram"></a>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link_tg" href="https://web.telegram.org" aria-label="Ссылка на Telegram"></a>
           </li>
-          <li class="social-item">
-            <a class="social-link social-pint" href="https://ru.pinterest.com" aria-label="Ссылка на Pinterest"></a>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link_pint" href="https://ru.pinterest.com" aria-label="Ссылка на Pinterest"></a>
           </li>
-          <li class="social-item">
-            <a class="social-link social-stumb" href="https://www.stumbleupon.com/" aria-label="Ссылка на Stumbleupon"></a>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link_stumb" href="https://www.stumbleupon.com/" aria-label="Ссылка на Stumbleupon"></a>
           </li>
         </ul>
       </section>

@@ -1,0 +1,23 @@
+.halls__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.halls__room {
+    position: relative;  /*чтобы ребенок figcaption позиционировался относительно этого элемента*/
+    margin: 60px 0 0;
+
+}
+
+.halls__room-name {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute; /*для наложения текста поверх картинки*/
+    max-width: 250px; /*Чтобы ограничить ширину строки и текст расположился на двух строках*/
+    top: 50%;         /*смещаю текстовый блок так, чтобы начало текста легло в середину*/
+    left: 50%;
+    transform:translate(-50%, -50%); /*смещаю текстовый блок уже в середину*/
+}

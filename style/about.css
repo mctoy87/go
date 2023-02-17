@@ -1,0 +1,54 @@
+.about__title {                /*добавил отступ как в макете*/
+    margin-bottom: 50px;
+}
+
+.about__text {
+    font-size: 20px;
+}
+
+/*Цитата*/
+.about__bq-text {
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    margin-left: 55px;
+    text-transform: uppercase;
+}
+
+.about__bq-text:before {
+    content: "\201C";
+    font-size: 44px;
+    font-weight: 900;
+    color: #6C0287;
+    position: absolute;
+    left: -50px;
+    top: -10px;
+}
+
+.about__bq-text:after {
+    content: "\201D";
+    font-size: 44px;
+    font-weight: 900;
+    color: #6C0287;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+
+.about__bq {
+    margin: 0;
+}
+
+.about__bq-autor {
+    display: inline-block;
+    max-width: 250px;
+    font-size: 20px;
+    margin-left: 29px;
+}
+
+.about__bq-img {
+    margin-left: 790px;
+    margin-top: 40px;
+}

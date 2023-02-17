@@ -1,0 +1,31 @@
+.page {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    background-color: #1B1A1B;
+    color: #FFFFFF;
+}
+
+.header__title {
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 150px;
+    text-align: left;
+    letter-spacing: -0.1em;
+    margin: 0;
+}
+
+.header__text {
+    font-size: 28px;
+    line-height: 50px;
+    margin: 0px auto 0 100px;
+}
+.heading2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height:50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 100px 0 40px;
+}

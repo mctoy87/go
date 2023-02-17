@@ -1,0 +1,19 @@
+.header {
+    position: relative; /*задаю относительное позиционирование для родителя псевдоэлемента before*/
+    z-index: 0;         /*понижаю зэд-индекс чтобы положить под псевдоэлемент*/
+    max-width: 1180px;      /*задаю размер блока, чтобы псевдоэлемент не накладывался на основной поток*/
+    min-height: 823px;
+    padding-top: 30px;
+}
+
+.header:before {
+    content: "";
+    position: absolute; /*задаю абсолютное позиционирование псевдоэлемента before*/
+    width: 675px;       /*задаю размер псевдоэлемента*/
+    height: 762px;
+    right: 0;           /*помещаю псевдоэлемент на абсолютном позиционировании в нужное место*/
+    bottom: 0; 
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;           
+    z-index: 1; /*повышаю зэд-индекс*/
+} 
