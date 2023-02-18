@@ -1,10 +1,14 @@
+.faq__list {
+    margin-top: 40px;
+}
+
 .faq__item {
     background-color: #fff;
     color: #1C1A1A;
     font-weight: 700;
     font-size: 24px;
     padding: 30px 70px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .faq__item:nth-child(even) {
@@ -19,6 +23,7 @@
     height: 28px;
     background-image: url("../img/icons/open-purple.svg");
     background-size: contain;
+    background-repeat: no-repeat;
     vertical-align:middle;
     float: right;
 }

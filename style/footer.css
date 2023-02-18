@@ -1,75 +1,82 @@
 /*Контакты*/
-.footer__location {
-    font-weight: 700;
-    position: relative;
-    max-width: 280px;
-    margin-left: 66px;
-    margin-bottom: 38px;
-
+.footer__address {
+    font-style: normal;
 }
 
-.footer__location:before {
-    content: "";
+.footer__icon-location {
     display: inline-block;
-    width: 66px;
+    width: 35px;
     height: 32px;
     background-image: url("../img/icons/location.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    top: 8px;
-    left: -66px;
+    vertical-align: baseline;
+}
+
+.footer__text-location {
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 54px;
+    vertical-align: baseline;
+}
+
+.footer__tel-wrap{
+    margin-top: 38px;
+}
+
+.footer__icon-tel {
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    background-image: url("../img/icons/phone-call.svg");
+    background-repeat: no-repeat;
+    vertical-align: top;
 }
 
 .footer__link-tel {
-    display: inline-block;
     font-weight: 700;
-    position: relative;
-    max-width: 280px;
-    margin-left: 66px;
-    margin-bottom: 11px;
+    margin-left: 30px;
+    vertical-align: top;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.footer__link-tel:before {
-    content: "";
-    display: inline-block;
-    width: 66px;
-    height: 32px;
-    background-image: url("../img/icons/phone-call.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: -66px;
+.footer__mail-wrap {
+    margin-top: 10px;
 }
 
 .footer__link-mail {
     font-weight: 700;
-    position: relative;
-    max-width: 280px;
-    margin-left: 66px;
-
+    margin-left: 26px;
+    vertical-align: top;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.footer__link-mail:before {
-    content: "";
+.footer__icon-mail {
     display: inline-block;
-    width: 66px;
+    width: 35px;
     height: 32px;
     background-image: url("../img/icons/envelope.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    left: -66px;
+    vertical-align: top;
 }
 
 /*Соцсети*/
+.footer__sm-list {
+    margin-top: 39px;
+}
 
 .footer__social-item, .footer__social-link {
 display: inline-block;
 width: 50px;
 height: 50px;
 margin-right: 26px;
+}
+
+.footer__social-item:last-child,
+.footer__social-link:last-child {
+    margin-right: 0;
 }
 
 .footer__social-link_vk {

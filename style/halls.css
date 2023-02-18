@@ -1,11 +1,12 @@
 .halls__list {
     list-style-type: none;
     padding: 0;
+    margin-top: 60px;
 }
 
 .halls__room {
     position: relative;  /*чтобы ребенок figcaption позиционировался относительно этого элемента*/
-    margin: 60px 0 0;
+    margin-top: 60px;
 
 }
 

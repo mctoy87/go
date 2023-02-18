@@ -6,6 +6,10 @@
     font-size: 20px;
 }
 
+.about__text_margin-top {
+    margin-top: 28px;
+}
+
 /*Цитата*/
 .about__bq-text {
     font-size: 44px;
@@ -38,7 +42,7 @@
 }
 
 .about__bq {
-    margin: 0;
+    margin-top: 50px;
 }
 
 .about__bq-autor {
