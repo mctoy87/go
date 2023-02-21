@@ -7,7 +7,7 @@
 }
 
 .about__text_margin-top {
-    margin-top: 28px;
+    margin-top: 20px;
 }
 
 /*Цитата*/
@@ -18,6 +18,7 @@
     margin: 0;
     position: relative;
     margin-left: 55px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
@@ -27,7 +28,7 @@
     font-weight: 900;
     color: #6C0287;
     position: absolute;
-    left: -50px;
+    left: -40px;
     top: -10px;
 }
 
@@ -37,12 +38,12 @@
     font-weight: 900;
     color: #6C0287;
     position: absolute;
-    right: 100px;
-    top: 50px;
+    right: 85px;
+    top: 145px;
 }
 
 .about__bq {
-    margin-top: 50px;
+    margin-top: 34px;
 }
 
 .about__bq-autor {
@@ -53,6 +54,27 @@
 }
 
 .about__bq-img {
-    margin-left: 790px;
-    margin-top: 40px;
+    vertical-align: bottom;
+}
+
+.about__text-wrapper {
+    display: inline-block;
+    max-width: 500px;
+    min-height: 596px;
+    vertical-align: top;
+}
+
+
+.about__photo-wrapper {
+
+    margin-right: 73px;
+    min-height: 596px;
+}
+
+.about__text_prewrap {
+    white-space: pre-wrap;
+}
+
+.about__bq-span {
+    padding-left: 111px;
 }
