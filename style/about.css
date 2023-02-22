@@ -1,14 +1,22 @@
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .about__title {                /*добавил отступ как в макете*/
     margin-bottom: 50px;
 }
 
-.about__text {
+.about__text-p1 {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.about__text_margin-top {
-    margin-top: 20px;
+.about__text-p2 {
+    font-size: 20px;
+    margin-bottom: 48px;
 }
+
 
 /*Цитата*/
 .about__bq-text {
@@ -17,8 +25,8 @@
     text-transform: uppercase;
     margin: 0;
     position: relative;
-    margin-left: 55px;
-    margin-bottom: 30px;
+    padding-left: 55px;
+    margin-bottom: 39px;
     text-transform: uppercase;
 }
 
@@ -28,7 +36,7 @@
     font-weight: 900;
     color: #6C0287;
     position: absolute;
-    left: -40px;
+    left: 10px;
     top: -10px;
 }
 
@@ -43,7 +51,7 @@
 }
 
 .about__bq {
-    margin-top: 34px;
+
 }
 
 .about__bq-autor {
@@ -66,9 +74,11 @@
 
 
 .about__photo-wrapper {
-
+    display: inline-block;
     margin-right: 73px;
     min-height: 596px;
+    width: 600px;
+    background-image: url("../img/about.jpg");
 }
 
 .about__text_prewrap {

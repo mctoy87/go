@@ -1,3 +1,8 @@
+.reserve {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .reserve__form {
     margin-top: 50px;
 }

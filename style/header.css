@@ -1,17 +1,23 @@
 .header {
+
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.header-container{
+    box-sizing: content-box;
     position: relative; /*задаю относительное позиционирование для родителя псевдоэлемента before*/
     z-index: 0;         /*понижаю зэд-индекс чтобы положить под псевдоэлемент*/
     max-width: 1180px;      /*задаю размер блока, чтобы псевдоэлемент не накладывался на основной поток*/
     min-height: 823px;
-    padding-top: 30px;
 }
 
-.header:before {
+.header-container:before {
     content: "";
     position: absolute; /*задаю абсолютное позиционирование псевдоэлемента before*/
     width: 675px;       /*задаю размер псевдоэлемента*/
     height: 762px;
-    right: 0;           /*помещаю псевдоэлемент на абсолютном позиционировании в нужное место*/
+    right: 30px;           /*помещаю псевдоэлемент на абсолютном позиционировании в нужное место учитывая padding-right*/
     bottom: 0; 
     background-image: url("../img/banner.png");
     background-repeat: no-repeat;           

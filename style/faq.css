@@ -1,5 +1,10 @@
-.faq__list {
-    margin-top: 40px;
+.faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.faq__title {
+    margin-bottom: 40px;
 }
 
 .faq__item {
@@ -8,7 +13,11 @@
     font-weight: 700;
     font-size: 24px;
     padding: 30px 70px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.faq__item:last-child {
+    margin-bottom: 0;
 }
 
 .faq__item:nth-child(even) {

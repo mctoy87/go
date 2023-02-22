@@ -34,53 +34,42 @@
   </head>
 
   <body class="page">
-    <div class="container">
-      <!-- Подключили обертку  -->
-
-      <section class="header">
+    <section class="header">
+      <div class="container header-container">
+        <!-- Подключили обертку  -->
         <h1 class="header__title">GAME OVER</h1>
         <p class="header__text">Новый формат игр и отдыха</p>
-      </section>
+      </div>
+    </section>
 
-      <section class="halls">
+    <section class="halls">
+      <div class="container">
+        <!-- Подключили обертку  -->
         <h2 class="halls__title heading-section" id="our_halls">Наши залы</h2>
         <!--ссылкы сделал сами иконки-->
         <ul class="halls__list">
-          <li class="halls__item">
-            <figure class="halls__room">
-              <figcaption class="halls__room-name">80's vibes</figcaption>
-              <img src="img/80s_vibes.jpg" alt="Комната в стиле 80-х" />
-            </figure>
+          <li class="halls__item halls__item-1">
+            <p class="halls__room-name">80's vibes</p>
           </li>
-          <li class="halls__item">
-            <figure class="halls__room">
-              <figcaption class="halls__room-name">Star wars</figcaption>
-              <img
-                src="img/star_wars.jpg"
-                alt="Комната в стиле звездных войн"
-              />
-            </figure>
+          <li class="halls__item halls__item-2">
+            <p class="halls__room-name">Star wars</p>
           </li>
-          <li class="halls__item">
-            <figure class="halls__room">
-              <figcaption class="halls__room-name">Wild west</figcaption>
-              <img
-                src="img/wild_west.jpg"
-                alt="Комната в стиле Дикого Запада"
-              />
-            </figure>
+          <li class="halls__item halls__item-3">
+            <p class="halls__room-name">Wild west</p>
           </li>
-          <li class="halls__item">
-            <figure class="halls__room">
-              <figcaption class="halls__room-name">Neon Style</figcaption>
-              <img src="img/neon_style.jpg" alt="Комната в стиле Неон-диско" />
-            </figure>
+          <li class="halls__item halls__item-4">
+            <p class="halls__room-name">Neon Style</p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="reserve">
-        <h2 class="reserve__title heading-section" id="reservation">Забронировать</h2>
+    <section class="reserve">
+      <div class="container">
+        <!-- Подключили обертку  -->
+        <h2 class="reserve__title heading-section" id="reservation">
+          Забронировать
+        </h2>
         <form
           class="reserve__form"
           id="reserve-id"
@@ -169,38 +158,44 @@
             required
           />Согласен на обработку данных
         </label>
-      </section>
+      </div>
+    </section>
 
-      <section class="about">
+    <section class="about">
+      <div class="container">
+        <!-- Подключили обертку  -->
         <h2 class="about__title heading-section">О нас</h2>
-        <img class="about__photo-wrapper" src="img/about.jpg" alt="Развлечения для гостей в наших комнатах">
+        <div class="about__photo-wrapper"></div>
         <div class="about__text-wrapper">
-          <p class="about__text">
-          Для наших гостей мы создали концептуально новое игровое пространство
-          виртуальной реальности в центральной части города.
+          <p class="about__text-p1">
+            Для наших гостей мы создали концептуально новое игровое пространство
+            виртуальной реальности в центральной части города.
           </p>
-          <p class="about__text about__text_margin-top about__text_prewrap">Каждый день мы стараемся создавать         
-для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками 
-со всего мира
-          </p>
+          <p class="about__text-p2 about__text_prewrap">Каждый день мы стараемся создавать 
+для вас самую лучшую игровую атмосферу
+и радовать Вас топовыми игровыми разработками 
+со всего мира</p>
 
-        <!--цитата-->
+          <!--цитата-->
           <figure class="about__bq bq-wrap">
             <blockquote class="about__bq-text">
               <p>GAME OVER &mdash;</p>
               <p>это место незабываемых впечатлений</p>
             </blockquote>
             <span class="about__bq-span">
-            <img class="about__bq-img" src="img/blockquote.png" alt="sfsdg" />
+              <img class="about__bq-img" src="img/blockquote.png" alt="sfsdg" />
             </span>
             <figcaption class="about__bq-autor">
               Аркадий Абрамкин, создатель игровой территории GAME OVER
             </figcaption>
           </figure>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="faq">
+    <section class="faq">
+      <div class="container">
+        <!-- Подключили обертку  -->
         <h2 class="faq__title heading-section">Частые вопросы</h2>
         <ul class="faq__list">
           <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
@@ -209,23 +204,32 @@
           <li class="faq__item">Как получить VIP комнату?</li>
           <li class="faq__item">Какая комната самая популярная?</li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="footer">
+    <section class="footer">
+      <div class="container">
+        <!-- Подключили обертку  -->
         <h2 class="footer__title heading-section">Контакты</h2>
         <address class="footer__address">
           <span class="footer__icon-location"></span>
-          <p class="footer__text-location">г. Москва <br>ул. Аквамарина, 16</p>
+          <p class="footer__text-location">
+            г. Москва <br />ул. Аквамарина, 16
+          </p>
           <p class="footer__tel-wrap">
             <span class="footer__icon-tel"></span>
-            <a class="footer__link-tel" href="tel:+79509302893">8 (950) 930 - 28 - 93</a>
+            <a class="footer__link-tel" href="tel:+79509302893"
+              >8 (950) 930 - 28 - 93</a
+            >
           </p>
           <p class="footer__mail-wrap">
             <span class="footer__icon-mail"></span>
-            <a class="footer__link-mail" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+            <a class="footer__link-mail" href="mailto:GameOver@gmail.com"
+              >GameOver@gmail.com</a
+            >
           </p>
         </address>
-        
+
         <ul class="footer__sm-list">
           <li class="footer__social-item">
             <a
@@ -256,7 +260,7 @@
             ></a>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 </html>

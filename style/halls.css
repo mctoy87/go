@@ -1,14 +1,43 @@
+.halls {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.halls__title {
+    margin-bottom: 60px;
+}
+
 .halls__list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 60px;
-}
-
-.halls__room {
-    position: relative;  /*чтобы ребенок figcaption позиционировался относительно этого элемента*/
-    margin-top: 60px;
 
 }
+
+.halls__item {
+    position: relative; /*для вертикальной отцентровки вложенного параграфа*/
+    max-width: 1180px;
+    min-height: 710px;
+    margin-bottom: 60px;
+}
+
+.halls__item:last-child {  
+    margin-bottom: 0;
+}
+
+.halls__item-1 {
+    background-image: url("../img/80s_vibes.jpg");
+}
+
+.halls__item-2 {
+    background-image: url("../img/star_wars.jpg");
+}
+
+.halls__item-3 {
+    background-image: url("../img/wild_west.jpg");
+}
+
+.halls__item-4 {
+    background-image: url("../img/neon_style.jpg");
+}
+
 
 .halls__room-name {
     font-size: 70px;
@@ -16,9 +45,10 @@
     line-height: 80px;
     text-align: center;
     text-transform: uppercase;
-    position: absolute; /*для наложения текста поверх картинки*/
-    max-width: 250px; /*Чтобы ограничить ширину строки и текст расположился на двух строках*/
-    top: 50%;         /*смещаю текстовый блок так, чтобы начало текста легло в середину*/
-    left: 50%;
-    transform:translate(-50%, -50%); /*смещаю текстовый блок уже в середину*/
+    color: #FFFFFF;
+
+    position: absolute;   /*решение для вертикального выравнивания внутри блока, если знаешь высоту https://learn.javascript.ru/css-center*/
+    top: 50%;
+    left: 405px;
+    margin-top: -40px;
 }
