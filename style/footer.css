@@ -82,20 +82,3 @@ margin-right: 26px;
 .footer__social-link:last-child {
     margin-right: 0;
 }
-
-.footer__social-link_vk {
-    background-image: url("../img/icons/social_vk.svg");
-}
-
-.footer__social-link_tg {
-    background-image: url("../img/icons/social_telegram.svg");
-
-}
-
-.footer__social-link_pint {
-    background-image: url("../img/icons/social-pinterest.svg");
-}
-
-.footer__social-link_stumb {
-    background-image: url("../img/icons/social-stumbleupon.svg");
-}

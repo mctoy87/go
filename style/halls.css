@@ -4,7 +4,7 @@
 }
 
 .halls__title {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .halls__list {
@@ -12,13 +12,20 @@
 }
 
 .halls__item {
+    display: inline-block;
     position: relative; /*для вертикальной отцентровки вложенного параграфа*/
-    max-width: 1180px;
-    min-height: 710px;
-    margin-bottom: 60px;
+    width: 580px;
+    min-height: 349px;
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
-.halls__item:last-child {  
+.halls__item:nth-child(2n) {  
+    margin-right: 0;
+}
+
+.halls__item:nth-last-child(-n+2) {
     margin-bottom: 0;
 }
 
@@ -49,6 +56,6 @@
 
     position: absolute;   /*решение для вертикального выравнивания внутри блока, если знаешь высоту https://learn.javascript.ru/css-center*/
     top: 50%;
-    left: 405px;
+    left: 103px;
     margin-top: -40px;
 }

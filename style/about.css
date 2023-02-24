@@ -58,11 +58,11 @@
     display: inline-block;
     max-width: 250px;
     font-size: 20px;
-    margin-left: 29px;
 }
 
 .about__bq-img {
     vertical-align: bottom;
+    margin-right: 29px;
 }
 
 .about__text-wrapper {
