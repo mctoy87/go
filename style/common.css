@@ -7,20 +7,6 @@
     color: #FFFFFF;
 }
 
-.header__title {
-    font-size: 150px;
-    font-weight: 900;
-    line-height: 150px;
-    text-align: left;
-    letter-spacing: -0.1em;
-    margin: 0;
-}
-
-.header__text {
-    font-size: 28px;
-    line-height: 50px;
-    padding-left: 100px;
-}
 .heading-section {
     font-size: 40px;
     font-weight: 700;

@@ -3,6 +3,11 @@
     padding-bottom: 100px;
 }
 
+.footer-container {
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+    padding-bottom: 10px;;
+}
+
 .footer__title {
     margin-bottom: 54px;
 }
@@ -13,34 +18,18 @@
     margin-bottom: 39px;
 }
 
-.footer__icon-location {
-    display: inline-block;
-    width: 35px;
-    height: 32px;
-    background-image: url("../img/icons/location.svg");
-    background-repeat: no-repeat;
-    vertical-align: baseline;
-}
+
 
 .footer__text-location {
     display: inline-block;
     font-weight: 700;
     padding-left: 30px;
     margin-bottom: 38px;
-    vertical-align: baseline;
+    vertical-align: top;
 }
 
 .footer__tel-wrap{
     margin-bottom: 10px;
-}
-
-.footer__icon-tel {
-    display: inline-block;
-    width: 35px;
-    height: 32px;
-    background-image: url("../img/icons/phone-call.svg");
-    background-repeat: no-repeat;
-    vertical-align: top;
 }
 
 .footer__link-tel {
@@ -59,17 +48,11 @@
     color: #FFFFFF;
 }
 
-.footer__icon-mail {
-    display: inline-block;
-    width: 35px;
-    height: 32px;
-    background-image: url("../img/icons/envelope.svg");
-    background-repeat: no-repeat;
-    vertical-align: top;
-}
-
 /*Соцсети*/
 
+.footer__sm-list {
+    padding-bottom: 175px;
+}
 
 .footer__social-item, .footer__social-link {
 display: inline-block;
@@ -81,4 +64,19 @@ margin-right: 26px;
 .footer__social-item:last-child,
 .footer__social-link:last-child {
     margin-right: 0;
+}
+
+.footer__map {
+    float: right;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__copyright-text {
+    font-size: 14px;
+    line-height: 16px;
 }

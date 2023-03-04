@@ -1,0 +1,57 @@
+.advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.advantages__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.advantages__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+.advantages__item{
+    flex-basis: 380px;
+    height: 228px;
+    padding-left: 40px;
+    padding-top: 166px;
+
+}
+
+.advantages__text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.advantages__item_vr {
+    background-image: url("../img/vr.jpg");
+}
+
+.advantages__item_audio {
+    background-image: url("../img/audio.jpg");
+}
+
+.advantages__item_karaoke {
+    background-image: url("../img/karaoke.jpg");
+}
+
+.advantages__item_games {
+    background-image: url("../img/games.jpg");
+}
+
+.advantages__item_cinema {
+    background-image: url("../img/cinema.jpg");
+}
+
+.advantages__item_console {
+    background-image: url("../img/console.jpg");
+}

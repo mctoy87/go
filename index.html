@@ -34,11 +34,79 @@
   </head>
 
   <body class="page">
-    <section class="header">
-      <div class="container header-container">
-        <!-- Подключили обертку  -->
-        <h1 class="header__title">GAME OVER</h1>
-        <p class="header__text">Новый формат игр и отдыха</p>
+    <header class="header container">
+      <nav class="navigation">
+        <img class="navigation__logo" src="img/logo.svg" alt="Логотип страницы GAME OVER">
+        <ul class="navigation__list">
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Залы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Бронь</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>          
+        <div class="navigation__item-order">
+          <a class="navigation__link-order" href="#">Заказать звонок</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="welcome">
+      <div class="container welcome-container">
+        <h1 class="welcome__title">GAME OVER</h1>
+        <p class="welcome__text">Новый формат игр и отдыха</p>
+        <p class="welcome__advantages">
+          <span class="welcome__advantages_purple-1">4</span> Тематических зала
+        </p>
+        <p class="welcome__advantages welcome__advantages_2">
+          <span class="welcome__advantages_purple-2">new</span> Новейшая аппаратура
+        </p>
+        <div class="welcome__reserve-wrap">
+          <a class="welcome__reserve-link" href="#">Забронировать</a>
+        </div>
+        <a class="welcome__down-link" href="#">
+          <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
+            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
+            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
+            </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+      <h2 class="advantages__title">У нас есть все для классного <br>отдыха с друзьями!</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item_vr">
+          <p class="advantages__text">VR очки</p>
+        </li>
+        <li class="advantages__item advantages__item_audio">
+          <p class="advantages__text">Аудио-система 5.1 с отличным звуком</p>
+        </li>
+        <li class="advantages__item advantages__item_karaoke">
+          <p class="advantages__text">Караоке (4 микрофона)</p>
+        </li>
+        <li class="advantages__item advantages__item_games">
+          <p class="advantages__text">Настольные игры</p>
+        </li>
+        <li class="advantages__item advantages__item_cinema">
+          <p class="advantages__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+        </li>
+        <li class="advantages__item advantages__item_console">
+          <p class="advantages__text">РlаyStаtiоn 5</p>
+        </li>
+      </ul>
       </div>
     </section>
 
@@ -46,29 +114,24 @@
       <div class="container">
         <!-- Подключили обертку  -->
         <h2 class="halls__title heading-section" id="our_halls">Наши залы</h2>
-        <!--ссылкы сделал сами иконки-->
         <ul class="halls__list">
           <li class="halls__item halls__item-1">
             <p class="halls__room-name">80's vibes</p>
-          <!-- Убрал закрывающий тэг для обнуления пробелов браузера между инлайновыми элементами -->
           <li class="halls__item halls__item-2">
             <p class="halls__room-name">Star wars</p>
-          <!-- Убрал закрывающий тэг для обнуления пробелов браузера между инлайновыми элементами -->
           <li class="halls__item halls__item-3">
             <p class="halls__room-name">Wild west</p>
-          <!-- Убрал закрывающий тэг для обнуления пробелов браузера между инлайновыми элементами -->
           <li class="halls__item halls__item-4">
             <p class="halls__room-name">Neon Style</p>
-          <!-- Убрал закрывающий тэг для обнуления пробелов браузера между инлайновыми элементами -->
         </ul>
       </div>
     </section>
 
     <section class="reserve">
-      <div class="container">
+      <div class="container container-purple">
         <!-- Подключили обертку  -->
         <h2 class="reserve__title heading-section" id="reservation">
-          Забронировать
+          Забронировать зал просто
         </h2>
         <form
           class="reserve__form"
@@ -77,12 +140,15 @@
           method="post"
         >
           <fieldset class="reserve__hall">
-            <!-- <legend class="reserve__hall-legend">Выбери зал</legend> -->
-            <!--нет в макете Figma-->
-            <input type="radio" name="room" value="80's" />80's vibes
-            <input type="radio" name="room" value="star_wars" />star wars
-            <input type="radio" name="room" value="wild_west" />wild west
-            <input type="radio" name="room" value="neon" />neon style
+            <legend class="reserve__hall-legend">Выбери зал</legend>
+            <input class="reserve__choose-room visually-hidden" type="radio" name="room" value="80's" id="80_s" />
+              <label class="reserve__room-name" for="80_s">80's vibes</label>
+            <input class="reserve__choose-room visually-hidden" type="radio" name="room" value="star_wars" id="star_wars"/>
+              <label class="reserve__room-name" for="star_wars">star wars</label>
+            <input class="reserve__choose-room visually-hidden" type="radio" name="room" value="wild_west" id="wild_west" />
+              <label class="reserve__room-name" for="wild_west">wild west</label>
+            <input class="reserve__choose-room visually-hidden" type="radio" name="room" value="neon" id="neon"/>
+              <label class="reserve__room-name" for="neon">neon style</label>
           </fieldset>
           <fieldset class="reserve__service">
             <legend class="reserve__service-legend">
@@ -90,74 +156,82 @@
             </legend>
             <fieldset class="reserve__console">
               <legend class="reserve__console-legend">Приставка:</legend>
-              <input
-                type="radio"
-                name="console"
-                value="playstation"
-              />PlayStation
-              <input type="radio" name="console" value="sega" />Sega Mega Drive
-              <input type="radio" name="console" value="xbox" />X-Box One S
-              <input type="radio" name="console" value="dendy" />Dendy
+                <ul class="reserve__console-list">
+                  <li class="reserve__console-item">
+                    <input class="reserve__console-input" type="radio" name="console" value="playstation"/>PlayStation
+                  </li>
+                  <li class="reserve__console-item">
+                    <input class="reserve__console-input" type="radio" name="console" value="sega" />Sega Mega Drive
+                  </li>             
+                  <li class="reserve__console-item">
+                    <input class="reserve__console-input" type="radio" name="console" value="xbox" />X-Box One S
+                  </li>         
+                  <li class="reserve__console-item">
+                    <input class="reserve__console-input" type="radio" name="console" value="dendy" />Dendy
+                  </li>    
+                </ul>
             </fieldset>
             <fieldset class="reserve__border-games">
               <legend class="reserve__border-games-legend">
                 Настольные игры:
               </legend>
-              <input type="checkbox" name="boarding_game" value="jenga" />Jenga
-              <input
-                type="checkbox"
-                name="boarding_game"
-                value="momopoly"
-              />Monopoly
-              <input
-                type="checkbox"
-                name="boarding_game"
-                value="manchkin"
-              />Манчкин
-              <input type="checkbox" name="boarding_game" value="alias" />Alias
+              <ul class="reserve__games-list">
+                <li class="reserve__games-item">
+                  <input class="reserve__games-input" type="checkbox" name="boarding_game" value="jenga" />Jenga
+                </li>
+                <li class="reserve__games-item">
+                  <input class="reserve__games-input" type="checkbox" name="boarding_game" value="momopoly"/>Monopoly
+                </li>
+                <li class="reserve__games-item">
+                  <input class="reserve__games-input" type="checkbox" name="boarding_game" value="manchkin"/>Манчкин
+                </li>
+                <li class="reserve__games-item">
+                  <input class="reserve__games-input" type="checkbox" name="boarding_game" value="alias" />Alias
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="reserve__extra">
               <legend class="reserve__extra-legend">Дополнительно:</legend>
-              <input type="checkbox" name="extra" value="karaoke" />Караоке
-              <input type="checkbox" name="extra" value="vr" />VR
+              <ul class="reserve__extra-list">
+                <li class="reserve__extra-item">
+                  <input class="reserve__extra-input" type="checkbox" name="extra" value="karaoke" />Караоке
+                </li>
+                <li class="reserve__extra-item">
+                  <input class="reserve__extra-input" type="checkbox" name="extra" value="vr" />VR
+                </li>
+              </ul>
             </fieldset>
           </fieldset>
 
           <fieldset class="reserve__data">
             <legend class="reserve__data-legend">Выбери дату и время</legend>
-            <label for="date">Дата<abbr title="required">*</abbr></label>
-            <input id="date" type="date" required />
-            <label for="time">Время<abbr title="required">*</abbr></label>
-            <input id="time" type="time" required />
-            <label for="persons"
-              >Количество человек<abbr title="required">*</abbr></label
-            >
-            <input id="persons" type="number" required />
-            <label for="first_name">Имя<abbr title="required">*</abbr></label>
-            <input id="first_name" type="text" required />
-            <label for="second_name"
-              >Фамилия<abbr title="required">*</abbr></label
-            >
-            <input id="second_name" type="text" required />
-            <label for="tel"
-              >Номер телефона<abbr title="required">*</abbr></label
-            >
-            <input id="tel" type="tel" required />
-            <label> <input type="checkbox" />Я старше 18 лет </label>
+            <div class ="reserve__wrap-1">
+              <label class="reserve__date-label visually-hidden" for="date">Дата</label>
+              <input class="reserve__date-input" id="date" type="date" required />
+              <label class="reserve__time-label visually-hidden" for="time">Время</label>
+              <input class="reserve__time-input" id="time" type="time"required />
+              <label class="reserve__persons-label visually-hidden" for="persons">Количество человек</label>
+              <input class="reserve__persons-input" id="persons" type="number" placeholder="Сколько человек" required/>
+            </div>
+            <div class ="reserve__wrap-2">
+              <label class="reserve__name-label"for="first_name">Имя</label>
+              <input class="reserve__name-input" id="first_name" type="text" required />
+              <label class="reserve__surname-label"for="second_name">Фамилия</label>
+              <input class="reserve__surname-input" id="second_name" type="text" required />
+            </div>
+            <div class ="reserve__wrap-3">
+              <label class="reserve__tel-label"for="tel">Телефон</label>
+              <input class="reserve__tel-input" id="tel" type="tel" required />
+              <label class="reserve__mail-label"for="mail">E-mail</label>
+              <input class="reserve__mail-input" id="mail" type="email" required />
+            </div>
           </fieldset>
         </form>
-
-        <button class="reserve__button" type="submit" form="reserve-id">
-          Забронировать
-        </button>
-        <label>
-          <input
-            class="reserve__personal-data"
-            type="checkbox"
-            form="reserve-id"
-            required
-          />Согласен на обработку данных
-        </label>
+        <div class="reserve-button-wrap">
+          <button class="reserve__button" type="submit" form="reserve-id">
+            Забронировать
+          </button>
+        </div>
       </div>
     </section>
 
@@ -228,17 +302,18 @@
     </section>
 
     <section class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <!-- Подключили обертку  -->
         <h2 class="footer__title heading-section">Контакты</h2>
         <address class="footer__address">
-          <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer__logo-location" width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.4815 0C11.338 0 6.21411 4.52938 6.21411 10.3125C6.21411 12.5126 6.93645 14.4745 8.32275 16.3129L16.6192 28.1616C17.0217 28.7376 17.9421 28.7365 18.3437 28.1616L26.6762 16.2726C28.0326 14.5175 28.7488 12.4567 28.7488 10.3125C28.7488 4.62619 23.6943 0 17.4815 0ZM17.4815 15C14.6576 15 12.3599 12.8971 12.3599 10.3125C12.3599 7.72794 14.6576 5.625 17.4815 5.625C20.3053 5.625 22.603 7.72794 22.603 10.3125C22.603 12.8971 20.3053 15 17.4815 15Z" fill="#CD06FF"/>
             <path d="M25.4891 21.5435L20.3313 28.9239C18.9962 30.829 15.9593 30.8228 14.6306 28.9257L9.46443 21.5454C4.91897 22.5073 2.11688 24.2693 2.11688 26.375C2.11688 30.0289 10.0333 32 17.4815 32C24.9297 32 32.846 30.0289 32.846 26.375C32.846 24.2678 30.0401 22.5048 25.4891 21.5435Z" fill="#CD06FF"/>
             </svg>
           <p class="footer__text-location">
             г. Москва <br />ул. Аквамарина, 16
           </p>
+          <img class="footer__map" src="img/map.jpg" alt="Наше месторасположение на карте">
           <p class="footer__tel-wrap">
             <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M29.1358 14.6654H32.0494C32.0494 7.82541 26.4072 2.66675 18.9237 2.66675V5.33341C24.8412 5.33341 29.1358 9.25741 29.1358 14.6654Z" fill="#CD06FF"/>
@@ -327,6 +402,10 @@
             </a>
           </li>
         </ul>
+        <div class="footer__copyright">
+          <small class="footer__copyright-text">© Game Over, 2022</small>
+          <small class="footer__copyright-text">Design by Anastasia Ilina<br>ilina9825@gmail.com</small>
+        </div>
       </div>
     </section>
   </body>
