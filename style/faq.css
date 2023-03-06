@@ -28,8 +28,8 @@
 .faq__item:after {
     content: "";
     display: inline-block;
-    width: 28px;
-    height: 28px;
+    width: 46px;
+    height: 46px;
     background-image: url("../img/icons/open-purple.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -40,8 +40,8 @@
 .faq__item:nth-child(even)::after {
     content: "";
     display: inline-block;
-    width: 28px;
-    height: 28px;
+    width: 46px;
+    height: 46px;
     background-image: url("../img/icons/open.svg");
     background-size: contain;
     vertical-align:middle;
