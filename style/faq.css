@@ -8,10 +8,10 @@
 }
 
 .faq__item {
+    display: flex;
+    align-items: center;
     background-color: #fff;
-    color: #1C1A1A;
-    font-weight: 700;
-    font-size: 24px;
+
     padding: 30px 70px;
     margin-bottom: 20px;
 }
@@ -25,25 +25,46 @@
     color: #ffffff;
 }
 
-.faq__item:after {
-    content: "";
-    display: inline-block;
-    width: 46px;
-    height: 46px;
-    background-image: url("../img/icons/open-purple.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align:middle;
-    float: right;
+.faq__text {
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: auto;
+}
+.faq__text_white {
+    color: #FFFFFF;
 }
 
-.faq__item:nth-child(even)::after {
-    content: "";
-    display: inline-block;
+.faq__button_purple{
+    border: none;
+    background-image: url("../img/icons/open-purple.svg");
+    background-color: inherit;
+    border-radius: 50%;
     width: 46px;
     height: 46px;
+}
+
+.faq__button_purple:hover {
+    background-image: url("../img/icons/open-purple_hover.svg");
+}
+
+.faq__button_purple:active {
+    background-image: url("../img/icons/open-purple_active.svg");
+}
+
+.faq__button_white{
+    border: none;
     background-image: url("../img/icons/open.svg");
-    background-size: contain;
-    vertical-align:middle;
-    float: right;
+    background-color: inherit;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+}
+
+.faq__button_white:hover{
+    background-image: url("../img/icons/open_hover.svg");
+}
+
+.faq__button_white:active{
+    background-image: url("../img/icons/open_active.svg");
 }

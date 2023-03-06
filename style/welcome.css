@@ -87,10 +87,37 @@
     padding: 25px 69px;
 }
 
+.welcome__reserve-link:hover,
+.welcome__reserve-link:focus{
+    background: #840AA3;
+    border-radius: 10px;
+}
+
+.welcome__reserve-link:active{
+    background: #640AA3;
+    border-radius: 10px;
+}
+
 .welcome__down-link {
     position: absolute;
+    height: 97px;
+    width: 97px;
+    background-image: url("../img/icons/down.svg");
     z-index: 1;
     left: 575px;
     bottom: 100px;
-
+    
 }
+
+.welcome__down-link:hover{
+    background-image: url("../img/icons/down_hover.svg");
+}
+
+.welcome__down-link:focus{
+    background-image: url("../img/icons/down_focus.svg")
+}
+
+.welcome__down-link:active{
+    background-image: url("../img/icons/down_active.svg")
+}
+
