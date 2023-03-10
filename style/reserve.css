@@ -8,7 +8,7 @@
 }
 
 .container-purple {
-    background: #440F51;
+    background: var(--main-color-4, #440F51);
     padding-bottom: 80px;
 }
 
@@ -47,7 +47,7 @@
 
 .reserve__room-name:hover{
     background: #EADEED;
-    border: 3px solid #640AA3;
+    border: 3px solid var(--main-color-3, #640AA3);
     border-radius: 8px;
     transition-duration: 0.2s;
     transition-timing-function: linear;
@@ -55,13 +55,13 @@
 
 .reserve__room-name:focus{
     background: #FFFFFF;
-    border: 3px solid #640AA3;
+    border: 3px solid var(--main-color-3, #640AA3);
     border-radius: 8px;
     transition-duration: 0.6s;
 } 
 
 .reserve__room-name:active{
-    background: #6C0287;
+    background: var(--main-color-2, #6C0287);
     border: 3px solid #FFFFFF;
     border-radius: 8px;
     color: #FFFFFF;
@@ -115,7 +115,7 @@
 .reserve__console-input:focus,
 .reserve__games-input:focus,
 .reserve__extra-input:focus{
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--main-color-1, #CD06FF);
 
 }
 
@@ -192,7 +192,7 @@
 }
 
 .reserve__wrap-1 {
-    max-width: 300px;
+    flex-basis: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -213,7 +213,7 @@
 .reserve__persons-input {
     min-height: 52px;
     padding-left: 20px;
-    max-width: 300px;
+    width: 100%;
 }
 
 .reserve__persons-input::placeholder {
@@ -277,11 +277,12 @@
 }
 
 .reserve__tel-input {
+    padding: 0;         /*Чтобы инпут не расширял флекс-элемент div, который в Хроме переполняет контейнер */
     min-height: 52px;
 }
 
 .reserve__tel-input:focus{
-    border: 2px solid #CD06FF;
+    border: 2px solid var(--main-color-1, #CD06FF);
 }
 
 .reserve__mail-label {
@@ -293,6 +294,7 @@
 }
 
 .reserve__mail-input {
+    padding: 0;         /*Чтобы инпут не расширял флекс-элемент div, который в Хроме переполняет контейнер */
     min-height: 52px;
 }
 
@@ -313,18 +315,18 @@
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
-    color: #6C0287;
+    color: var(--main-color-2, #6C0287);
 }
 
 .reserve__button:hover {
     background: #EADEED;
-    border: 3px solid #6C0287;
+    border: 3px solid var(--main-color-2, #6C0287);
     border-radius: 10px;
     transition-duration: 0.2s;
 }
 
 .reserve__button:focus {
-    border: 3px solid #6C0287;
+    border: 3px solid var(--main-color-2, #6C0287);
     border-radius: 10px;
     background: #FFFFFF;
     transition-duration: 0.6;

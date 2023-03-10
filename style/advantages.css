@@ -1,6 +1,6 @@
 .advantages {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: calc(50px + var(--translate-card, 70px));
 }
 
 .advantages__title {
@@ -23,7 +23,10 @@
     height: 228px;
     padding-left: 40px;
     padding-top: 166px;
+}
 
+.advantages__item:nth-child(3n-1){
+    transform: translateY(var(--translate-card, 70px));
 }
 
 .advantages__item:hover { 

@@ -43,7 +43,7 @@
 .footer__link-tel:hover,
 .footer__link-mail:hover {
     color: #EADEED;
-    border-bottom: 1px solid #CD06FF;
+    border-bottom: 1px solid var(--main-color-1, #CD06FF);
 }
 
 .footer__link-mail {
@@ -78,11 +78,11 @@ margin-right: 26px;
 
 .footer__social-link:focus > svg {
     fill: #EADEED;
-    border: 1px solid #CD06FF;
+    border: 1px solid var(--main-color-1, #CD06FF);
 }
 
 .footer__social-link:active > svg {
-    fill: #CD06FF;
+    fill: var(--main-color-1, #CD06FF);
 }
 
 .footer__map {
@@ -101,5 +101,5 @@ margin-right: 26px;
 }
 .footer__copyright-mail:hover{
     fill: #EADEED;
-    border-bottom: 1px solid #CD06FF;
+    border-bottom: 1px solid var(--main-color-1, #CD06FF);
 }

@@ -34,7 +34,7 @@
     content: "\201C";
     font-size: 44px;
     font-weight: 900;
-    color: #6C0287;
+    color: var(--main-color-2, #6C0287);
     position: absolute;
     left: 10px;
     top: -10px;
@@ -44,7 +44,7 @@
     content: "\201D";
     font-size: 44px;
     font-weight: 900;
-    color: #6C0287;
+    color: var(--main-color-2, #6C0287);
     position: absolute;
     right: 85px;
     top: 145px;

@@ -16,28 +16,73 @@
 }
 
 .reviews__photo-wraper {
-    min-height: 319px;
+    position: relative;     /*Для позиционирования псевдоэлемента - имени автора*/
+    min-height: 280px;
+}
+.reviews__first-autor:before{ /*Для имени автора отзыва*/
+    position: absolute;
+    bottom: -40px;
+    left: 25%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    content: "Макс Самойлов";
 }
 
+
 .reviews__first-autor {
-    background-image: url("../img/person-1.png");
+    background: radial-gradient(50% 50% at 50% 50%, 
+            rgba(196, 196, 196, 0) 0%,
+            rgba(108, 2, 135, 0.5) 100%), 
+            url("../img/person-1.png");
     background-repeat: no-repeat;
+    border-radius: 140px;
     display: inline-block;
     min-width: 280px;
 }
 
 .reviews__second-autor {
-    background-image: url("../img/person-2.png");
+    position: relative;     /*Для позиционирования псевдоэлемента - имени автора*/
+    background: radial-gradient(50% 50% at 50% 50%, 
+            rgba(196, 196, 196, 0) 0%,
+            rgba(108, 2, 135, 0.5) 100%),
+            url("../img/person-2.png");
+    border-radius: 140px;
     background-repeat: no-repeat;
     display: inline-block;
     width: 280px;
 }
 
+.reviews__second-autor:before{ /*Для имени автора отзыва*/
+    position: absolute;
+    bottom: -40px;
+    left: 20%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    content: "Оксана Григорьева";
+}
+
 .reviews__third-autor {
-    background-image: url("../img/person-3.png");
+    position: relative;     /*Для позиционирования псевдоэлемента - имени автора*/
+    background: radial-gradient(50% 50% at 50% 50%, 
+    rgba(196, 196, 196, 0) 0%,
+    rgba(108, 2, 135, 0.5) 100%),
+    url("../img/person-3.png");
+    border-radius: 140px;
     background-repeat: no-repeat;
     display: inline-block;
     width: 280px;
+}
+
+.reviews__third-autor:before{ /*Для имени автора отзыва*/
+    position: absolute;
+    bottom: -40px;
+    left: 25%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    content: "Никита Ященко";
 }
 
 .reviews__reviewer-text {
@@ -50,10 +95,6 @@
     top: 52px;
 }
 
-.reviews__item_mb-45px {
-    margin-bottom: 45px;
-}
-
-.reviews__item_mb-50px {
-    margin-bottom: 50px;
+.reviews__item_mb {
+    margin-bottom: 89px;
 }
