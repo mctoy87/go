@@ -26,6 +26,12 @@
 
 }
 
+.advantages__item:hover { 
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+
+
 .advantages__text{
     font-weight: 700;
     font-size: 20px;

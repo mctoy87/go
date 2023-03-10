@@ -22,6 +22,9 @@
     text-transform: uppercase;
 }
 
+.navigation__link:hover {
+    box-shadow: 2px 2px #CD06FF, 4px 4px;
+}
 
 .navigation__logo {
     margin-right: auto;
@@ -50,9 +53,12 @@
     background: #6C0287;
     border: 3px solid #6C0287;
     border-radius: 10px;
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
 }
 
 .navigation__link-order:active {
     background: #640AA3;
     outline: 1px solid #000000;
+    transition-duration: 0.8s;
 }

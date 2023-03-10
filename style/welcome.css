@@ -91,6 +91,8 @@
 .welcome__reserve-link:focus{
     background: #840AA3;
     border-radius: 10px;
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
 }
 
 .welcome__reserve-link:active{
@@ -111,13 +113,19 @@
 
 .welcome__down-link:hover{
     background-image: url("../img/icons/down_hover.svg");
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
 }
 
 .welcome__down-link:focus{
-    background-image: url("../img/icons/down_focus.svg")
+    background-image: url("../img/icons/down_focus.svg");
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
 }
 
 .welcome__down-link:active{
-    background-image: url("../img/icons/down_active.svg")
+    background-image: url("../img/icons/down_active.svg");
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
 }
 

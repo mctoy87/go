@@ -40,6 +40,12 @@
     color: #FFFFFF;
 }
 
+.footer__link-tel:hover,
+.footer__link-mail:hover {
+    color: #EADEED;
+    border-bottom: 1px solid #CD06FF;
+}
+
 .footer__link-mail {
     font-weight: 700;
     padding-left: 26px;
@@ -66,6 +72,19 @@ margin-right: 26px;
     margin-right: 0;
 }
 
+.footer__social-link:hover > svg {
+    fill: #EADEED;
+}
+
+.footer__social-link:focus > svg {
+    fill: #EADEED;
+    border: 1px solid #CD06FF;
+}
+
+.footer__social-link:active > svg {
+    fill: #CD06FF;
+}
+
 .footer__map {
     float: right;
 }
@@ -79,4 +98,8 @@ margin-right: 26px;
 .footer__copyright-text {
     font-size: 14px;
     line-height: 16px;
+}
+.footer__copyright-mail:hover{
+    fill: #EADEED;
+    border-bottom: 1px solid #CD06FF;
 }
