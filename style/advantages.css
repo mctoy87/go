@@ -19,6 +19,7 @@
 }
 
 .advantages__item{
+    position: relative;
     flex-basis: 380px;
     height: 228px;
     padding-left: 40px;
@@ -29,10 +30,17 @@
     transform: translateY(var(--translate-card, 70px));
 }
 
+.advantages__item:nth-child(3n-1):hover {
+    
+    transform: scale(1.1) translateY(var(--translate-card, 70px));
+    transition-duration: 0.8s;
+}
+
 .advantages__item:hover { 
     transform: scale(1.1);
     transition-duration: 0.8s;
 }
+
 
 
 .advantages__text{
