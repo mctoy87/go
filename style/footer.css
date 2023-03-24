@@ -1,40 +1,43 @@
 .footer {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 21px;
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
 .footer-container {
-    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
-    padding-bottom: 10px;;
+
+
 }
 
 .footer__title {
-    margin-bottom: 54px;
+    margin-bottom: 46px;
 }
 
 /*Контакты*/
 .footer__address {
     font-style: normal;
-    margin-bottom: 39px;
+    margin-bottom: 30px;
 }
 
-
+.footer__logo-location {
+    padding-top: 12px;
+}
 
 .footer__text-location {
     display: inline-block;
     font-weight: 700;
-    padding-left: 30px;
-    margin-bottom: 38px;
+    padding-left: 19px;
+    margin-bottom: 43px;
     vertical-align: top;
 }
 
 .footer__tel-wrap{
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .footer__link-tel {
     font-weight: 700;
-    padding-left: 30px;
+    padding-left: 19px;
     vertical-align: top;
     text-decoration: none;
     color: #FFFFFF;
@@ -48,7 +51,7 @@
 
 .footer__link-mail {
     font-weight: 700;
-    padding-left: 26px;
+    padding-left: 19px;
     vertical-align: top;
     text-decoration: none;
     color: #FFFFFF;
@@ -57,14 +60,14 @@
 /*Соцсети*/
 
 .footer__sm-list {
-    margin-bottom: 175px;
+    margin-bottom: 156px;
 }
 
 .footer__social-item, .footer__social-link {
 display: inline-block;
 width: 50px;
 height: 50px;
-margin-right: 26px;
+margin-right: 19px;
 }
 
 .footer__social-item:last-child,
@@ -99,6 +102,17 @@ margin-right: 26px;
     font-size: 14px;
     line-height: 16px;
 }
+
+.footer__copyright-text-end {
+    min-width: 157px;
+    text-align: end;
+}
+
+.footer__copyright-mail {
+    display: block;
+    margin-top: 6px;
+}
+
 .footer__copyright-mail:hover{
     fill: #EADEED;
     border-bottom: 1px solid var(--main-color-1, #CD06FF);

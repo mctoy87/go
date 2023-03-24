@@ -1,24 +1,26 @@
 .halls {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 52px;
+    padding-bottom: 100px;
 }
 
 .halls__title {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .halls__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 
 }
 
 .halls__item {
-    display: inline-block;
-    position: relative; /*для вертикальной отцентровки вложенного параграфа*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 580px;
     min-height: 349px;
     background-size: cover;
-    margin-bottom: 20px;
-    margin-right: 20px;
 }
 
 .halls__item:nth-child(2n) {  
@@ -47,15 +49,11 @@
 
 
 .halls__room-name {
+    width: min-content;
     font-size: 70px;
     font-weight: 700;
     line-height: 80px;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-
-    position: absolute;   /*решение для вертикального выравнивания внутри блока, если знаешь высоту https://learn.javascript.ru/css-center*/
-    top: 50%;
-    left: 103px;
-    margin-top: -40px;
 }

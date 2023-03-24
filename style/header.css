@@ -4,8 +4,8 @@
 
 .navigation {
     display: flex;
+    align-items: center;
     position: relative;
-    /* display: flex; */
 }
 
 .navigation__list {
@@ -30,18 +30,16 @@
     margin-right: auto;
 }
 
-.navigation__item-order {
-    padding-top: 8px;
-}
 
 .navigation__link-order {
     display: block;
     text-align: center;
-    padding: 12px 32px;
-    min-width: 280px;
+    padding: 12px 0;
     border: 3px solid var(--main-color-1, #CD06FF);
     border-radius: 10px;
-    min-height: 55px;
+    width: 280px;
+    height: 55px;
+    text-align: center;
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;

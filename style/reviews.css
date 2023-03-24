@@ -1,5 +1,5 @@
 .reviews {
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 50px;
 }
 
@@ -10,25 +10,34 @@
 .reviews__list {
     max-width: 980px;
     margin: 0 auto;
+
 }
 .reviews__item {
     position: relative;
+    display: flex;
+    gap: 20px;
 }
 
 .reviews__photo-wraper {
-    position: relative;     /*Для позиционирования псевдоэлемента - имени автора*/
-    min-height: 280px;
+    /* position: relative;     Для позиционирования псевдоэлемента - имени автора */
+    max-height: 319px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    justify-content: center;
+    align-items: center;
 }
-.reviews__first-autor:before{ /*Для имени автора отзыва*/
-    position: absolute;
-    bottom: -40px;
-    left: 25%;
+.reviews__autor { /*Для имени автора отзыва*/
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    content: "Макс Самойлов";
 }
 
+.reviews__reviewer-text {
+    font-size: 20px;
+    padding-top: 52px;
+}
 
 .reviews__first-autor {
     background: radial-gradient(50% 50% at 50% 50%, 
@@ -37,8 +46,8 @@
             url("../img/person-1.png");
     background-repeat: no-repeat;
     border-radius: 140px;
-    display: inline-block;
-    min-width: 280px;
+    width: 280px;
+    height: 280px;
 }
 
 .reviews__second-autor {
@@ -49,19 +58,10 @@
             url("../img/person-2.png");
     border-radius: 140px;
     background-repeat: no-repeat;
-    display: inline-block;
     width: 280px;
+    height: 280px;
 }
 
-.reviews__second-autor:before{ /*Для имени автора отзыва*/
-    position: absolute;
-    bottom: -40px;
-    left: 20%;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    content: "Оксана Григорьева";
-}
 
 .reviews__third-autor {
     position: relative;     /*Для позиционирования псевдоэлемента - имени автора*/
@@ -71,30 +71,10 @@
     url("../img/person-3.png");
     border-radius: 140px;
     background-repeat: no-repeat;
-    display: inline-block;
     width: 280px;
-}
-
-.reviews__third-autor:before{ /*Для имени автора отзыва*/
-    position: absolute;
-    bottom: -40px;
-    left: 25%;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    content: "Никита Ященко";
-}
-
-.reviews__reviewer-text {
-    padding-left: 20px;
-    display: inline-block;
-    max-width: 680px;
-    vertical-align: top;
-    font-size: 20px;
-    position: absolute;
-    top: 52px;
+    height: 280px;
 }
 
 .reviews__item_mb {
-    margin-bottom: 89px;
+    margin-bottom: 50px;
 }

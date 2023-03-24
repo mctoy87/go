@@ -30,7 +30,7 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="style/style.css" />
-    <title>Игровая территория GAME OVER</title>
+    <title>Кибер-клуб GAME OVER</title>
   </head>
 
   <body class="page">
@@ -39,24 +39,22 @@
         <img class="navigation__logo" src="img/logo.svg" alt="Логотип страницы GAME OVER">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Залы</a>
+            <a class="navigation__link" href="#rooms">Залы</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">О нас</a>
+            <a class="navigation__link" href="#about">О нас</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Бронь</a>
+            <a class="navigation__link" href="#reserve">Бронь</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Отзывы</a>
+            <a class="navigation__link" href="#reviews">Отзывы</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Контакты</a>
+            <a class="navigation__link" href="#footer">Контакты</a>
           </li>
         </ul>          
-        <div class="navigation__item-order">
           <a class="navigation__link-order" href="#">Заказать звонок</a>
-        </div>
       </nav>
     </header>
 
@@ -72,9 +70,9 @@
             <span class="welcome__advantages_purple-2">new</span> Новейшая аппаратура
           </p>
           <div class="welcome__reserve-wrap">
-            <a class="welcome__reserve-link" href="#">Забронировать</a>
+            <a class="welcome__reserve-link" href="#reserve">Забронировать</a>
           </div>
-          <a class="welcome__down-link" href="#">
+          <a class="welcome__down-link" href="#advantages">
             <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
               <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
@@ -83,7 +81,7 @@
           </a>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="container">
         <h2 class="advantages__title">У нас есть все для классного <br>отдыха с друзьями!</h2>
         <ul class="advantages__list">
@@ -91,7 +89,7 @@
             <p class="advantages__text">VR очки</p>
           </li>
           <li class="advantages__item advantages__item_audio">
-            <p class="advantages__text">Аудио-система 5.1 с отличным звуком</p>
+            <p class="advantages__text">Аудио-система 5.1 <br>с отличным звуком</p>
           </li>
           <li class="advantages__item advantages__item_karaoke">
             <p class="advantages__text">Караоке (4 микрофона)</p>
@@ -108,23 +106,27 @@
         </ul>
         </div>
       </section>
-      <section class="halls">
+      <section class="halls" id="rooms">
         <div class="container">
           <!-- Подключили обертку  -->
           <h2 class="halls__title heading-section" id="our_halls">Наши залы</h2>
           <ul class="halls__list">
             <li class="halls__item halls__item-1">
               <p class="halls__room-name">80's vibes</p>
+            </li>
             <li class="halls__item halls__item-2">
               <p class="halls__room-name">Star wars</p>
+            </li>
             <li class="halls__item halls__item-3">
               <p class="halls__room-name">Wild west</p>
+            </li>
             <li class="halls__item halls__item-4">
               <p class="halls__room-name">Neon Style</p>
+            </li>
           </ul>
         </div>
       </section>
-      <section class="reserve">
+      <section class="reserve" id="reserve">
         <div class="container container-purple">
           <!-- Подключили обертку  -->
           <h2 class="reserve__title heading-section" id="reservation">
@@ -155,7 +157,7 @@
                 <legend class="reserve__console-legend">Приставка:</legend>
                   <label class="reserve__console-name" for="ps">
                     <input class="reserve__console-input" type="radio" name="console" value="playstation" id="ps"/>
-                    PlayStation
+                    PlayStation 5
                   </label>
                   <label class="reserve__console-name" for="sega">
                     <input class="reserve__console-input" type="radio" name="console" value="sega" id="sega"/>
@@ -234,20 +236,20 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <!-- Подключили обертку  -->
           <h2 class="about__title heading-section">О нас</h2>
           <div class="about__photo-wrapper"></div>
           <div class="about__text-wrapper">
-            <p class="about__text-p1">
-              Для наших гостей мы создали концептуально новое игровое пространство
-              виртуальной реальности в центральной части города.
+            <p class="about__text-p1">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности 
+              в центральной части города.
             </p>
-            <p class="about__text-p2 about__text_prewrap">Каждый день мы стараемся создавать 
-      для вас самую лучшую игровую атмосферу
-      и радовать Вас топовыми игровыми разработками 
-      со всего мира</p>
+            <p class="about__text-p2 ">Каждый день мы стараемся создавать 
+              для вас самую лучшую игровую атмосферу 
+              и радовать Вас топовыми игровыми разработками 
+              со всего мира
+            </p>
             <!--цитата-->
             <figure class="about__bq bq-wrap">
               <blockquote class="about__bq-text">
@@ -264,20 +266,29 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h3 class="reviews__title heading-section">Отзывы посетителей</h3>
           <ul class="reviews__list">
             <li class="reviews__item reviews__item_mb">
-              <div class="reviews__photo-wraper reviews__first-autor"></div>
+              <div class="reviews__photo-wraper">
+                <div class="reviews__first-autor"></div>
+                <p class="reviews__autor">Макс Самойлов</p>
+              </div>
               <p class="reviews__reviewer-text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
             </li>
             <li class="reviews__item reviews__item_mb">
-              <div class="reviews__photo-wraper reviews__second-autor"></div>
-              <p class="reviews__reviewer-text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас вгороде больше нет подобных заведений</p>
+              <div class="reviews__photo-wraper">
+                <div class="reviews__second-autor"></div>
+                <p class="reviews__autor">Оксана Григорьева</p>
+              </div>
+              <p class="reviews__reviewer-text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
             </li>
             <li class="reviews__item">
-              <div class="reviews__photo-wraper reviews__third-autor"></div>
+              <div class="reviews__photo-wraper">
+                <div class="reviews__third-autor"></div>
+                <p class="reviews__autor">Никита Ященко</p>
+              </div>
               <p class="reviews__reviewer-text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космосаы</p>
             </li>
           </ul>
@@ -301,7 +312,7 @@
               <button class="faq__button_purple"></button>
             </li>
             <li class="faq__item">
-              <p class="faq__text faq__text_white">Как получить VIP комнату?</p>
+              <p class="faq__text faq__text_white">Как получить VIP карту?</p>
               <button class="faq__button_white"></button>
             </li>
             <li class="faq__item">
@@ -314,7 +325,7 @@
     </main>
 
     <footer>
-      <section class="footer">
+      <section class="footer" id="footer">
         <div class="container footer-container">
           <!-- Подключили обертку  -->
           <h2 class="footer__title heading-section">Контакты</h2>
@@ -324,7 +335,7 @@
               <path d="M25.4891 21.5435L20.3313 28.9239C18.9962 30.829 15.9593 30.8228 14.6306 28.9257L9.46443 21.5454C4.91897 22.5073 2.11688 24.2693 2.11688 26.375C2.11688 30.0289 10.0333 32 17.4815 32C24.9297 32 32.846 30.0289 32.846 26.375C32.846 24.2678 30.0401 22.5048 25.4891 21.5435Z" fill="#CD06FF"/>
               </svg>
             <p class="footer__text-location">
-              г. Москва <br />ул. Аквамарина, 16
+              г. Москва <br />ул. Усачёва, 29 к3
             </p>
             <img class="footer__map" src="img/map.jpg" alt="Наше месторасположение на карте">
             <p class="footer__tel-wrap">
@@ -395,7 +406,7 @@
           </ul>
           <div class="footer__copyright">
             <small class="footer__copyright-text">© Game Over, 2022</small>
-            <small class="footer__copyright-text">Design by Anastasia Ilina<br>
+            <small class="footer__copyright-text footer__copyright-text-end">Design by Anastasia Ilina<br>
               <a class="footer__copyright-mail" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
             </small>
           </div>
