@@ -7,20 +7,42 @@
     margin-bottom: 46px;
 }
 
-.about__text-p1 {
-    font-size: 20px;
-    margin-bottom: 28px;
-    white-space: pre-line;
+
+
+
+
+
+.about__wrapper {
+    display: grid;
+    grid-template-columns: minmax(min-content, 600px) minmax(min-content, 500px);
+    grid-template-rows: 222px 325px;
+    gap: 48px 80px;
+    grid-template-areas: 
+        "photo doc"
+        "photo blockqoute";
 }
 
-.about__text-p2 {
-    font-size: 20px;
-    margin-bottom: 57px;
-    white-space: pre-line;
+.about__photo {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    grid-area: photo;
 }
 
+.about__text {
+
+    vertical-align: top;
+    font-size: 20px;
+    white-space: pre-line;
+    grid-area: doc;
+}
 
 /*Цитата*/
+.about__bq {
+    grid-area: blockqoute;
+}
+
 .about__bq-text {
     font-size: 44px;
     line-height: 50px;
@@ -30,6 +52,10 @@
     padding-left: 32px;
     margin-bottom: 28px;
     text-transform: uppercase;
+}
+
+.about__bq-ph{
+    white-space: pre-line;
 }
 
 .about__bq-text:before {
@@ -52,10 +78,6 @@
     top: 149px;
 }
 
-.about__bq {
-
-}
-
 .about__bq-autor {
     display: inline-block;
     max-width: 250px;
@@ -63,26 +85,157 @@
 }
 
 .about__bq-img {
-    vertical-align: bottom;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
     margin-right: 24px;
-}
 
-.about__text-wrapper {
-    display: inline-block;
-    max-width: 500px;
-    min-height: 596px;
-    vertical-align: top;
 }
 
 
-.about__photo-wrapper {
-    display: inline-block;
-    margin-right: 73px;
-    min-height: 596px;
-    width: 600px;
-    background-image: url("../img/about.jpg");
-}
 
-.about__bq-span {
-    padding-left: 111px;
+@media (max-width: 1310px) {
+    .about {
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
+
+    .about__title {
+        margin-bottom: 26px;
+    }
+    
+    .about__wrapper {
+        grid-template-columns: minmax(min-content, 420px) minmax(min-content, 444px);
+        grid-template-rows: 195px 217px;
+        gap: 26px 40px;
+    }
+    
+    .about__text {
+        font-size: 18px;
+        line-height: 24px;
+
+    }
+
+    .about__bq-text {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 13px;
+    }
+
+    .about__bq-ph{
+        white-space: normal;
+    }
+
+    .about__bq-img {
+        width: 70px;
+        height: 70px;
+        margin-right: 35px;
+    }
+
+    .about__bq-autor {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .about__bq-text:after {
+        right: 160px;
+        top: 75px;
+    }
+}
+@media (max-width: 960px) {
+    .about {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .about__title {
+        margin-bottom: 30px;
+    }
+   
+    .about__wrapper {
+        grid-template-columns: minmax(min-content, 382px) minmax(min-content, 278px);
+        grid-template-rows: 380px 184px;
+        grid-template-areas: 
+        "photo doc"
+        "blockqoute blockqoute";
+        gap: 30px 28px;
+        align-items: center;
+    }
+
+
+    .about__bq-img {
+        margin-right: 25px;
+        margin-left: 38%;
+    }
+
+    .about__text {
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+
+    .about__bq-text {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .about__bq-text:after {
+        right: 106px;
+        top: 40px;
+    }
+}
+@media (max-width: 660px) {
+    .about {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .about__title {
+        margin-bottom: 15px;
+    }
+    
+    .about__wrapper {
+        grid-template-columns: 280px;
+        grid-template-rows: max-content 280px max-content;
+        grid-template-areas: 
+        "doc"
+        "photo"
+        "blockqoute";
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .about__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about__bq-text {
+        padding-left: 15px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .about__bq-img {
+        width: 56px;
+        height: 56px;
+        margin-right: 11px;
+        margin-left: 0;
+    }
+
+    .about__bq-autor {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about__bq-text:before {
+        font-size: 22px;
+    }
+
+    .about__bq-text:after {
+        font-size: 22px;
+        right: 115px;
+        top: 50px;
+    }
 }

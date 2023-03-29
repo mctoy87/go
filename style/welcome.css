@@ -6,28 +6,30 @@
 
 .welcome-container{
     box-sizing: content-box;
-    position: relative; /*задаю относительное позиционирование для родителя псевдоэлемента before*/
-    z-index: 0;         /*понижаю зэд-индекс чтобы положить под псевдоэлемент*/
-    max-width: 1180px;      /*задаю размер блока, чтобы псевдоэлемент не накладывался на основной поток*/
+    position: relative; 
+    z-index: 0;         
+    max-width: 1180px;      
     min-height: 823px;
 }
 
 .welcome-container:before {
     content: "";
-    position: absolute; /*задаю абсолютное позиционирование псевдоэлемента before*/
-    width: 675px;       /*задаю размер псевдоэлемента*/
+    position: absolute; 
+    width: 675px;       
     height: 762px;
-    right: 30px;           /*помещаю псевдоэлемент на абсолютном позиционировании в нужное место учитывая padding-right*/
+    right: 130px;           
     bottom: 0; 
+    z-index: 1; 
+
     background-image: url("../img/banner.png");
-    background-repeat: no-repeat;           
-    z-index: 1; /*повышаю зэд-индекс*/
+    background-repeat: no-repeat;
+    background-size: cover;           
 }
 
 .welcome__title {
     font-size: 150px;
     font-weight: 900;
-    line-height: 150px;
+    line-height: 100%;
     text-align: left;
     letter-spacing: -0.1em;
     margin: 0;
@@ -69,32 +71,32 @@
     color: var(--main-color-1, #CD06FF);
 }
 
-.welcome__reserve-wrap{
-    box-sizing: border-box;
-    max-width: 374px;
-    background: var(--main-color-2, #6C0287);
-    border-radius: 10px;
-    text-align: center;
-    
-}
 .welcome__reserve-link{
     display: block;
+    box-sizing: border-box;
+
+    max-width: 374px;
+    padding: 25px 69px;
+
+    background: var(--main-color-2, #6C0287);
+    box-shadow: 0 0 10px var(--main-color-2, #6c0287);
+    border-radius: 10px;
+
+    text-align: center;
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
-    max-width: 374px;
-    padding: 25px 69px;
-    box-shadow: 0 0 10px var(--main-color-2, #6c0287);
 }
 
 .welcome__reserve-link:hover,
-.welcome__reserve-link:focus{
+.welcome__reserve-link:focus  {
     background: #840AA3;
     border-radius: 10px;
     transition-duration: 0.6s;
     transition-delay: 0.2s;
 }
+
 
 .welcome__reserve-link:active{
     background: var(--main-color-3, #640AA3);
@@ -103,12 +105,18 @@
 
 .welcome__down-link {
     position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 90px;
+
     height: 97px;
     width: 97px;
+
     background-image: url("../img/icons/down.svg");
-    z-index: 1;
-    left: 569px;
-    bottom: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     
 }
 
@@ -122,6 +130,8 @@
     background-image: url("../img/icons/down_focus.svg");
     transition-duration: 0.6s;
     transition-delay: 0.2s;
+    border: 1px solid var(--main-color-1, #CD06FF);
+    outline: none;
 }
 
 .welcome__down-link:active{
@@ -130,3 +140,193 @@
     transition-delay: 0.2s;
 }
 
+    @media (max-width: 1310px) {
+
+        .welcome {
+            padding-top: 30px;
+            padding-bottom: 42px;
+        }
+
+        /* .container {
+            padding: 0 60px;
+        } */
+
+        .welcome-container {
+            min-height: 583px;
+            max-width: 904px;
+        }
+
+        .welcome__title {
+            font-size: 120px;
+            margin-bottom: 20px;
+        }
+
+        .welcome__text {
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        .welcome__advantages_purple-1 {
+            font-size: 80px;
+            line-height: 113px;            
+        }
+
+        .welcome__advantages {
+            font-size: 26px;
+            line-height: 30px;
+            margin-bottom: 80px;                       
+        }
+
+        .welcome__advantages_purple-2 {
+            font-size: 60px;
+            line-height: 85px;
+        }
+
+        .welcome__reserve-link {
+            max-width: 296px;
+            padding: 17px 48px;
+            font-size: 22px;          
+        }
+
+        .welcome__down-link {
+            height: 67px;
+            width: 67px;
+            bottom: 46px;
+        }
+
+        .welcome-container:before {
+            width: 453px;
+            height: 520px;
+            right: 60px; 
+        }
+    }
+
+    @media (max-width: 960px) {
+
+        .welcome {
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        /* .container {
+            padding: 0 40px;
+        } */
+
+        .welcome-container {
+            min-height: 537px;
+            max-width: 688px;
+        }
+
+        .welcome__title {
+            font-size: 86px;
+        }
+
+
+        .welcome__text {
+            font-size: 18px;
+            line-height: 24px;
+            padding-left: 70px;
+            margin-bottom: 50px;
+        }
+
+        .welcome__advantages_purple-1 {
+            font-size: 50px;
+            line-height: 71px;
+        }
+
+        .welcome__advantages {
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 100px;
+        }
+
+        .welcome__advantages:not(:last-of-type) {
+            margin-right: 30px;
+        }
+
+        .welcome__advantages_purple-2 {
+            font-size: 40px;
+            line-height: 56px;
+        }
+
+        .welcome__reserve-link {
+            max-width: 214px;
+            padding: 11px 35px;
+
+            font-size: 16px;
+            line-height: 24px;            
+        }
+
+        .welcome__down-link {
+            display: none;
+        }
+
+        .welcome-container:before {
+            width: 409px;
+            height: 479px;
+            right: 40px; 
+        }
+    }
+
+    @media (max-width: 660px) {
+
+        .welcome {
+            padding-top: 20px;
+            padding-bottom: 23px;
+        }
+
+        /* .container {
+            padding: 0 20px;
+        } */
+
+        .welcome-container {
+            min-height: 204px;
+            max-width: 280px;
+        }
+
+        .welcome__title {
+            font-size: 35px;
+            margin-bottom: 6px;
+        }
+
+        .welcome__text {
+            font-size: 10px;
+            line-height: 14px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .welcome__advantages_purple-1 {
+            font-size: 26px;
+            line-height: 37px;
+        }
+
+        .welcome__advantages {
+            font-size: 10px;
+            line-height: 11px;
+            margin-bottom: 30px;
+        }
+
+        .welcome__advantages:not(:last-of-type) {
+            margin-right: 20px;
+        }
+
+        .welcome__advantages_purple-2 {
+            font-size: 22px;
+            line-height: 31px;
+        }
+
+        .welcome__reserve-link {
+            max-width: 117px;
+            padding: 7px 13px;
+
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        .welcome-container:before {
+            width: 161px;
+            height: 179px;
+            right: 20px; 
+        }
+    }

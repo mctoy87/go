@@ -45,9 +45,10 @@
             rgba(108, 2, 135, 0.5) 100%), 
             url("../img/person-1.png");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 140px;
     width: 280px;
-    height: 280px;
+    flex-basis: 280px;
 }
 
 .reviews__second-autor {
@@ -58,8 +59,9 @@
             url("../img/person-2.png");
     border-radius: 140px;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 280px;
-    height: 280px;
+    flex-basis: 280px;
 }
 
 
@@ -71,10 +73,124 @@
     url("../img/person-3.png");
     border-radius: 140px;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 280px;
-    height: 280px;
+    flex-basis: 280px;
 }
 
 .reviews__item_mb {
     margin-bottom: 50px;
+}
+
+@media (max-width: 1310px) {
+    .reviews {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    
+    .reviews__title {
+        margin-bottom: 26px;
+    }
+
+    .reviews__first-autor,
+    .reviews__second-autor,
+    .reviews__third-autor {
+    width: 172px;
+    flex-basis: 172px;
+    }
+
+    .reviews__item {
+        gap: 38px;
+    }
+
+    .reviews__photo-wraper {
+        gap: 21px;
+    }
+
+    .reviews__autor {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .reviews__reviewer-text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 960px) {
+    .reviews {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .reviews__title {
+        margin-bottom: 61px;
+    }
+
+    .reviews__first-autor,
+    .reviews__second-autor,
+    .reviews__third-autor {
+    width: 153px;
+    flex-basis: 153px;
+    }
+
+    .reviews__item {
+        gap: 15px;
+    }
+
+    .reviews__photo-wraper {
+        gap: 17px;
+    }
+
+    .reviews__autor {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .reviews__reviewer-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+    
+@media (max-width: 660px) {
+    .reviews {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .reviews__title {
+        margin-bottom: 1s5px;
+    }
+
+    .reviews__first-autor,
+    .reviews__second-autor,
+    .reviews__third-autor {
+    width: 86px;
+    flex-basis: 86px;
+    }
+    
+
+    .reviews__item {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .reviews__photo-wraper {
+        gap: 9px;
+    }
+
+    .reviews__autor {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .reviews__reviewer-text {
+        font-size: 12px;
+        line-height: 16px;
+        padding-top: 0;
+    }
+
+
 }

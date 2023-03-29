@@ -1,0 +1,38 @@
+
+
+@media (max-width: 1310px) {
+    .container {
+        padding: 0 60px;
+        max-width: 1024px;
+    }
+
+    .heading-section {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        padding: 0 40px;
+        max-width: 768px;
+    }
+
+    .heading-section {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+@media (max-width: 480px) {
+
+
+    .container {
+        padding: 0 20px;
+        max-width: 320px;
+    }
+
+    .heading-section {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

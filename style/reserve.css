@@ -2,16 +2,10 @@
     padding-top: 81px;
     padding-bottom: 80px;
     background: var(--main-color-4, #440F51);
-
 }
 
 .reserve__title {
     margin-bottom: 46px;
-
-}
-
-.container-purple {
-
 }
 
 .reserve__hall {
@@ -30,10 +24,6 @@
     margin-bottom: 40px;
 }
 
-.reserve__choose-room {
-
-}
-
 .reserve__room-name {
     font-weight: 700;
     font-size: 30px;
@@ -42,7 +32,7 @@
     text-transform: uppercase;
     color: #000000;
     flex-basis: 250px;
-    padding: 7px 15px 8px;
+    padding: 7px 0 8px;
     background: #FFFFFF;
     border-radius: 8px;
 }
@@ -109,6 +99,7 @@
     width: 27px;
     height: 27px;
     vertical-align: bottom;
+
 }
 
 
@@ -175,45 +166,51 @@
 
 .reserve__data {
     padding: 0;
+    max-width: 980px;
     
-    display: flex;
-    flex-wrap: wrap;
-    width: 980px;
+    display: grid;
+    grid-template-columns: 300px 280px 300px;
+    grid-template-rows: 140px;
+    grid-template-areas: 
+        "time name contacts";
+    gap: 50px;
     margin: 0 auto;
-    gap: 36px 50px;
     border: none;
     padding-bottom: 40px;
 }
+
 
 .reserve__data-legend {
     font-weight: 700;
     text-align: center;
     margin-bottom: 60px;
+
 }
 
-.reserve__wrap-1 {
-    flex-basis: 300px;
+.reserve__wrap-time {
+    position: relative;
+    grid-area: time;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 36px 32px;
-
+    row-gap: 36px;
 }
 
-.reserve__date-input {
-    width: 134px;
-    min-height: 52px;
-}
-
+.reserve__date-input,
 .reserve__time-input {
-    width: 134px;
-    min-height: 52px;
+    min-width: 134px;
 }
 
-.reserve__persons-input {
-    min-height: 52px;
-    padding-left: 20px;
-    width: 100%;
+.reserve__wrap-name {
+    position: relative;
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reserve__data input {
+    flex-basis: 52px;
 }
 
 .reserve__persons-input::placeholder {
@@ -223,84 +220,63 @@
     color: #211E1E;
 }
 
-.reserve__wrap-2 {
+.reserve__wrap-contacts {
     position: relative;
+    grid-area: contacts;
     display: flex;
     flex-direction: column;
-    flex-basis: 280px;
-    gap: 36px;
+    justify-content: space-between;
+}
 
+.reserve__name-label,
+.reserve__surname-label,
+.reserve__tel-label,
+.reserve__mail-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .reserve__name-label{
     position: absolute;
     top: -20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
 }
-
-.reserve__name-input {
-    max-width: 280px;
-    min-height: 52px;
-}
-
 
 .reserve__surname-label {
     position: absolute;
     top: 68px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
 }
 
 .reserve__surname-input {
-    max-width: 280px;
-    min-height: 52px;
+    /* grid-area: surname; */
 }
 
-
-.reserve__wrap-3 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 300px;
-    max-width: 300px;
-    gap: 36px;
-}
 
 .reserve__tel-label {
     position: absolute;
     top: -20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
 }
 
 .reserve__tel-input {
-    padding: 0;         /*Чтобы инпут не расширял флекс-элемент div, который в Хроме переполняет контейнер */
-    min-height: 52px;
+    /* grid-area: telefon; */
 }
 
-.reserve__tel-input:focus{
+.reserve__data input:focus{     /*общее правило для инпутов*/
     border: 2px solid var(--main-color-1, #CD06FF);
+    outline: none;
 }
 
 .reserve__mail-label {
     position: absolute;
     top: 68px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
 }
 
-.reserve__mail-input {
-    padding: 0;         /*Чтобы инпут не расширял флекс-элемент div, который в Хроме переполняет контейнер */
-    min-height: 52px;
-}
+/* .reserve__mail-input {
+    grid-area: post;
+} */
 
 .reserve-button-wrap {
-    width: 980px;
+    max-width: 980px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
@@ -338,3 +314,313 @@
     background: #EADEED;
     border-radius: 10px;
 }
+
+    @media (max-width: 1310px) {
+        .reserve {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .reserve__title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 25px;
+        }
+
+        .reserve__hall-legend {
+            margin-bottom: 26px;
+        }
+
+        .reserve__room-name {
+            font-size: 20px;
+            line-height: 24px;
+            flex-basis: 180px;
+            padding: 10px 0;
+        }
+
+        .reserve__service{
+            justify-content: flex-start;
+            gap: 40px;
+        }
+
+        .reserve__service-legend {
+            margin-bottom: 26px;
+        }
+
+
+        .reserve__border-games {
+            flex-basis: 298px;
+        }
+
+        .reserve__extra {
+            flex-basis: 255px;
+        }
+
+        .reserve__data {
+            max-width: 904px;
+            grid-template-columns:  minmax(250px, 300px) repeat(2, minmax(220px, 1fr));
+            }
+            
+
+        .reserve__button {
+            min-width: 254px;
+            height: 50px;
+    }
+
+
+    }
+
+    @media (max-width: 960px) {
+        .reserve {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .reserve__title {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 40px;
+        }
+
+        .reserve__hall {
+            gap: 29px;
+            padding-bottom: 50px;
+        }
+
+        .reserve__hall-legend {
+            margin-bottom: 30px;
+        }
+
+        .reserve__room-name {
+            font-size: 16px;
+            line-height: 20px;
+            flex-basis: 150px;
+            padding: 9px 0;
+        }
+
+        .reserve__service{
+            flex-wrap: wrap;
+            gap: 32px 66px;
+        }
+
+        .reserve__service-legend {
+            margin-bottom: 30px;
+            padding-bottom: 50px;
+        }
+
+        .reserve__console-input,
+        .reserve__games-input,
+        .reserve__extra-input{
+            vertical-align: middle;
+        }
+
+        .reserve__console-legend,
+        .reserve__games-legend,
+        .reserve__extra-legend {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        
+        .reserve__console-name,
+        .reserve__games-name,
+        .reserve__extra-name {
+            font-size: 22px;
+            line-height: 25px;
+        }
+
+        .reserve__console {
+            flex-basis: 301px;
+        }
+
+        .reserve__border-games {
+            flex-basis: 321px;
+        }
+
+        .reserve__extra {
+            flex-basis: 278px;
+        }
+
+        .reserve__console-input,
+        .reserve__games-input,
+        .reserve__extra-input {
+            margin-right: 20px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .reserve__data {
+            max-width: 688px;
+            grid-template-columns: minmax(270px, 280px) minmax(290px, 300px);
+            grid-template-rows: 52px 140px;
+            grid-template-areas: 
+                "time time"
+                "name contacts";
+                justify-content: space-between;
+            gap: 64px 0;
+        }
+
+        .reserve__wrap-time{
+            display: grid;
+            grid-template-columns: repeat(2, 134px) minmax(0,64px) minmax(240px, 300px);
+            gap: 14px;
+        }
+
+        .reserve__date-input{
+            grid-column: 1/2;
+        }
+
+        .reserve__time-input{
+            grid-column: 2/3;
+        }
+
+        .reserve__persons-input{
+            grid-column: 4/5;
+        }
+
+
+        .reserve__button {
+            min-width: 300px;
+            height: 60px;
+        }
+    } 
+
+    @media (max-width: 660px) {
+        
+
+
+        .reserve {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .reserve__title {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 13px;
+        }
+
+        .reserve__hall {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px 20px;
+            padding-bottom: 30px;
+        }
+
+        .reserve__hall-legend {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 18px;
+
+        }
+
+        .reserve__room-name {
+            font-size: 14px;
+            line-height: 18px;
+            flex-basis: 130px;
+            padding: 6px 0;
+        }
+
+        .reserve__service{
+            gap: 25px;
+            padding-bottom: 30px;
+        }
+
+        .reserve__service-legend,
+        .reserve__console-legend,
+        .reserve__games-legend,
+        .reserve__extra-legend {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 15px;            
+        }
+
+        .reserve__console-name,
+        .reserve__games-name,
+        .reserve__extra-name {
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        .reserve__console,
+        .reserve__border-games,
+        .reserve__extra {
+            flex-basis: 100%;
+        }
+
+        .reserve__console-input,
+        .reserve__games-input,
+        .reserve__extra-input {
+            width: 30px;
+            height: 30px;
+        }
+
+        .reserve__wrap-time{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px 12px;
+        }
+
+        .reserve__data {
+            max-width: 280px;
+            grid-template-columns: 280px;
+            grid-template-rows: 119px repeat(2, 141px);
+            grid-template-areas: 
+                "time"
+                "name"
+                "contacts";
+            gap: 57px;
+
+            justify-content: center;
+            padding-bottom: 35px;
+        }
+
+        .reserve__data-legend {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 25px;              
+        }
+
+        .reserve__wrap-1 {
+            flex-wrap: wrap;
+            width: auto;
+            gap: 15px 12px;
+            margin-bottom: 30px;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .reserve__wrap-2 {
+            width: auto;
+            margin-bottom: 35px;
+            }
+
+        .reserve__wrap-3 {
+            width: auto;
+            max-width: 280px;
+        }
+
+        .reserve__date-input,
+        .reserve__time-input{
+            margin-right: 0;
+        }
+
+        .reserve__persons-input {
+            max-width: 280px;
+        }
+
+        .reserve-button-wrap {
+            justify-content: center;
+            max-width: 280px;           
+        }
+
+        .reserve__button {
+            min-width: 100%;
+            font-size: 18px;
+            line-height: 26px; 
+        }
+
+        .reserve__persons-input::placeholder {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
