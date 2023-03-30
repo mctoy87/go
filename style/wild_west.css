@@ -1,0 +1,23 @@
+
+@import "rooms_common.css";
+
+.hero {
+    background-image: url('../img/wild-west_banner.jpg');
+    background-position: top center;
+}
+
+.description__img {
+    background-image: url('../img/wild_west.jpg');
+}
+
+.other__item-1 {
+    background-image: url('../img/star_wars.jpg');
+}
+
+.other__item-2 {
+    background-image: url('../img/neon_style.jpg');
+}
+
+.other__item-3 {
+    background-image: url('../img/80s_vibes.jpg');
+}

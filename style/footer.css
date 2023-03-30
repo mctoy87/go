@@ -220,7 +220,7 @@
     }
 
     .footer__flex-wrap {
-        gap: 0;
+        gap: 27px;
     }
 
     .footer__map {
@@ -297,6 +297,10 @@
 
     .footer__link-mail:before{
         left: 35px;
+    }
+
+    .footer__flex-wrap {
+        gap: 10px;
     }
 
     .footer__social-item, 

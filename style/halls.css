@@ -16,6 +16,7 @@
 }
 
 .halls__item {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +49,15 @@
     background-image: url("../img/neon_style.jpg");
 }
 
+.halls_link::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .halls__room-name {
     width: min-content;
