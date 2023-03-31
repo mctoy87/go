@@ -39,7 +39,7 @@
 
 .reserve__room-name:hover{
     background: #EADEED;
-    border: 3px solid var(--main-color-3, #640AA3);
+    outline: 3px solid var(--main-color-3, #640AA3);
     border-radius: 8px;
     transition-duration: 0.2s;
     transition-timing-function: linear;
@@ -99,15 +99,12 @@
     width: 27px;
     height: 27px;
     vertical-align: bottom;
-
 }
-
 
 .reserve__console-input:focus,
 .reserve__games-input:focus,
 .reserve__extra-input:focus{
     outline: 1px solid var(--main-color-1, #CD06FF);
-
 }
 
 .reserve__border-games {
@@ -184,7 +181,6 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 60px;
-
 }
 
 .reserve__wrap-time {
@@ -211,6 +207,8 @@
 
 .reserve__data input {
     flex-basis: 52px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .reserve__persons-input::placeholder {
@@ -271,16 +269,11 @@
     top: 68px;
 }
 
-/* .reserve__mail-input {
-    grid-area: post;
-} */
-
 .reserve-button-wrap {
     max-width: 980px;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    
 }
 
 .reserve__button {
@@ -347,7 +340,6 @@
             margin-bottom: 26px;
         }
 
-
         .reserve__border-games {
             flex-basis: 298px;
         }
@@ -359,18 +351,16 @@
         .reserve__data {
             max-width: 904px;
             grid-template-columns:  minmax(250px, 300px) repeat(2, minmax(220px, 1fr));
-            }
+        }
             
 
         .reserve__button {
             min-width: 254px;
             height: 50px;
+        }
     }
 
-
-    }
-
-    @media (max-width: 960px) {
+    @media (max-width: 1040px) {
         .reserve {
             padding-top: 50px;
             padding-bottom: 50px;
@@ -477,7 +467,6 @@
             grid-column: 4/5;
         }
 
-
         .reserve__button {
             min-width: 300px;
             height: 60px;
@@ -486,8 +475,6 @@
 
     @media (max-width: 660px) {
         
-
-
         .reserve {
             padding-top: 30px;
             padding-bottom: 30px;

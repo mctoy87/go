@@ -12,7 +12,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-
 }
 
 .halls__item {
@@ -81,10 +80,6 @@
         margin-bottom: 37px;
     }
 
-    .halls__list {
-
-    }
-
     .halls__item {
         flex-basis: 442px;
         min-height: 267px;
@@ -95,7 +90,8 @@
         line-height: 60px;
     }
 }
-@media (max-width: 960px) {
+
+@media (max-width: 1040px) {
     .advantages {
         padding-top: 30px;
         padding-bottom: 62px;
@@ -105,10 +101,6 @@
         font-size: 24px;
         line-height: 36px;
         margin-bottom: 35px;
-    }
-
-    .halls__list {
-
     }
 
     .halls__item {
@@ -121,6 +113,7 @@
         line-height: 50px;
     }
 }
+
 @media (max-width: 660px) {
     .advantages {
         padding-top: 15px;
@@ -131,10 +124,6 @@
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 15px;
-    }
-
-    .halls__list {
-
     }
 
     .halls__item {

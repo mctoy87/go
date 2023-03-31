@@ -45,7 +45,6 @@
 .hero {
     min-height: 750px;
     height: 1px; /*чтобы высота внутреннего блока с h100% смогла расстянк=уться на весь контейнер*/
-    /* background-image: url('../img/80_s_banner.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -77,7 +76,6 @@
 }
 
 .description__img {
-    /* background-image: url('../img/80s_vibes.jpg'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -90,7 +88,6 @@
     font-size: 20px;
     line-height: 1.4;
     white-space: pre-line;
-    
 }
 
 .description__wrapper {
@@ -128,18 +125,6 @@
     height: 229px;
 }
 
-.other__item-1 {
-    /* background-image: url('../img/wild_west.jpg'); */
-}
-
-.other__item-2 {
-    /* background-image: url('../img/star_wars.jpg'); */
-}
-
-.other__item-3 {
-    /* background-image: url('../img/neon_style.jpg'); */
-}
-
 .other__room-name {
     font-weight: 700;
     font-size: 30px;
@@ -154,7 +139,7 @@
     padding-bottom: 44px;
 }
 
-@media (max-width:1024px) {
+@media (max-width:1040px) {
     
     .navigation {
         padding-bottom: 50px;

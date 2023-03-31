@@ -20,7 +20,6 @@
     right: 130px;           
     bottom: 0; 
     z-index: 1; 
-
     background-image: url("../img/banner.png");
     background-repeat: no-repeat;
     background-size: cover;           
@@ -55,7 +54,7 @@
     margin-right: 35px;
 }
 
-.welcome__advantages_purple-1  {
+.welcome__advantages-number  {
     font-weight: 900;
     font-size: 100px;
     line-height: 141px;
@@ -63,7 +62,7 @@
     font-variant: all-small-caps;
 }
 
-.welcome__advantages_purple-2 {
+.welcome__advantages-text {
     font-weight: 900;
     line-height: 106px;
     font-size: 75px;
@@ -74,14 +73,11 @@
 .welcome__reserve-link{
     display: block;
     box-sizing: border-box;
-
     max-width: 374px;
     padding: 25px 69px;
-
     background: var(--main-color-2, #6C0287);
     box-shadow: 0 0 10px var(--main-color-2, #6c0287);
     border-radius: 10px;
-
     text-align: center;
     font-weight: 700;
     font-size: 26px;
@@ -109,15 +105,11 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 90px;
-
     height: 97px;
     width: 97px;
-
     background-image: url("../img/icons/down.svg");
     background-size: cover;
     background-repeat: no-repeat;
-
-    
 }
 
 .welcome__down-link:hover{
@@ -147,10 +139,6 @@
             padding-bottom: 42px;
         }
 
-        /* .container {
-            padding: 0 60px;
-        } */
-
         .welcome-container {
             min-height: 583px;
             max-width: 904px;
@@ -166,7 +154,7 @@
             line-height: 30px;
         }
 
-        .welcome__advantages_purple-1 {
+        .welcome__advantages-number {
             font-size: 80px;
             line-height: 113px;            
         }
@@ -177,7 +165,7 @@
             margin-bottom: 80px;                       
         }
 
-        .welcome__advantages_purple-2 {
+        .welcome__advantages-text {
             font-size: 60px;
             line-height: 85px;
         }
@@ -201,16 +189,12 @@
         }
     }
 
-    @media (max-width: 960px) {
+    @media (max-width: 1040px) {
 
         .welcome {
             padding-top: 30px;
             padding-bottom: 40px;
         }
-
-        /* .container {
-            padding: 0 40px;
-        } */
 
         .welcome-container {
             min-height: 537px;
@@ -221,7 +205,6 @@
             font-size: 86px;
         }
 
-
         .welcome__text {
             font-size: 18px;
             line-height: 24px;
@@ -229,7 +212,7 @@
             margin-bottom: 50px;
         }
 
-        .welcome__advantages_purple-1 {
+        .welcome__advantages-number {
             font-size: 50px;
             line-height: 71px;
         }
@@ -244,7 +227,7 @@
             margin-right: 30px;
         }
 
-        .welcome__advantages_purple-2 {
+        .welcome__advantages-text {
             font-size: 40px;
             line-height: 56px;
         }
@@ -275,10 +258,6 @@
             padding-bottom: 23px;
         }
 
-        /* .container {
-            padding: 0 20px;
-        } */
-
         .welcome-container {
             min-height: 204px;
             max-width: 280px;
@@ -296,7 +275,7 @@
             margin-bottom: 10px;
         }
 
-        .welcome__advantages_purple-1 {
+        .welcome__advantages-number {
             font-size: 26px;
             line-height: 37px;
         }
@@ -311,7 +290,7 @@
             margin-right: 20px;
         }
 
-        .welcome__advantages_purple-2 {
+        .welcome__advantages-text {
             font-size: 22px;
             line-height: 31px;
         }

@@ -19,8 +19,6 @@
     display: inline-flex;
     flex-direction: column;
     gap: 30px;
-
-
 }
 
 .footer__address {
@@ -35,7 +33,6 @@
         "adress"
         "tel"
         "mail";
-
 }
 
 .footer__text-location {
@@ -52,7 +49,6 @@
     transform: translateY(-50%);
     width: 32px;
     height: 32px;
-
     background-image: url("../img/icons/location.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,18 +70,16 @@
     transform: translateY(-50%);
     width: 32px;
     height: 32px;
-
     background-image: url("../img/icons/phone-call.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-
-
 .footer__link-tel:hover,
 .footer__link-mail:hover {
     color: #EADEED;
     border-bottom: 1px solid var(--main-color-1, #CD06FF);
+    margin-bottom: -1px;
 }
 
 .footer__link-mail {
@@ -104,7 +98,6 @@
     transform: translateY(-50%);
     width: 32px;
     height: 32px;
-
     background-image: url("../img/icons/envelope.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -113,7 +106,6 @@
 /*Соцсети*/
 
 .footer__sm-list {
-
     display: flex;
     gap: 19px;
 }
@@ -121,9 +113,7 @@
 .footer__social-item, .footer__social-link {
     width: 50px;
     height: 50px;
-
 }
-
 
 .footer__social-link:hover > svg {
     fill: #EADEED;
@@ -169,6 +159,7 @@
 .footer__copyright-mail:hover{
     fill: #EADEED;
     border-bottom: 1px solid var(--main-color-1, #CD06FF);
+    margin-bottom: -1px;
 }
 
 @media (max-width: 1310px) {
@@ -200,10 +191,9 @@
         width: 26px;
         height: 26px;
     } 
-
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1040px) {
     .footer {
         padding-top: 10px;
     }
@@ -314,7 +304,6 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
-
         font-size: 12px;
         line-height: 16px;
     }

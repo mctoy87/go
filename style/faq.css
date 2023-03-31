@@ -16,7 +16,6 @@
     min-height: 87px;
     padding: 0 70px;
     margin-bottom: 20px;
-
 }
 
 .faq__item:last-child {
@@ -33,12 +32,12 @@
     font-weight: 700;
     font-size: 24px;
 }
+
 .faq__text_white {
     color: #FFFFFF;
 }
 
 .faq__button_purple{
-    
     border: none;
     background-image: url("../img/icons/open-purple.svg");
     background-color: inherit;
@@ -59,7 +58,6 @@
 }
 
 .faq__button_purple:hover {
-    
     background-image: url("../img/icons/open-purple_hover.svg");
     transition-duration: 0.5s;
 }
@@ -128,7 +126,6 @@
         color: #000000;
     }
 
-    
     .faq__button_white {
         background-image: url("../img/icons/open-purple.svg");
         background-color: inherit;
@@ -141,10 +138,9 @@
     .faq__button_white:active{
         background-image: url("../img/icons/open-purple_active.svg");
     }
-
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1040px) {
     .faq {
         padding-top: 30px;
         padding-bottom: 70px;
