@@ -10,12 +10,19 @@
 .faq__item {
     position: relative; /*позволит повеить псевдоэлемент .faq__button_purple:before на item* для :hover эффекта кнопки*/
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     background-color: #fff;
     min-height: 87px;
-    padding: 0 70px;
+
     margin-bottom: 20px;
+}
+
+.faq__item_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
 }
 
 .faq__item:last-child {
@@ -35,6 +42,32 @@
 
 .faq__text_white {
     color: #FFFFFF;
+}
+
+.faq__item_text-wrap {
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease-in-out;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.faq__item_desc {
+
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+
+    padding: 10px 70px;
+}
+
+.faq__item_active .faq__item_text-wrap {
+    height: auto;
+
 }
 
 .faq__button_purple{
@@ -95,6 +128,14 @@
 .faq__button_white:active{
     background-image: url("../img/icons/open_active.svg");
     transition-duration: 0.5s;
+}
+
+.faq__item_active .faq__button_purple-active {
+    background-image: url(../img/icons/open-purple_active.svg);
+}
+
+.faq__item_active .faq__button_white-active {
+    background-image: url("../img/icons/open_active.svg");
 }
 
 @media (max-width: 1310px) {
