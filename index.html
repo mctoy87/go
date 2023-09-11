@@ -14,7 +14,15 @@
 
   <link rel="stylesheet" href="style/style.css" />
   <title>Кибер-клуб GAME OVER</title>
+  <link
+    rel="stylesheet"
+    href="style/swiper-bundle.min.css"
+  />
 
+  <script defer src="script/just-validate.production.min.js"></script>
+  <script defer src="script/inputmask.min.js"></script>
+  <script defer src="script/axios.min.js"></script>
+  <script defer src="script/swiper-bundle.min.js"></script>
   <script type="module" src="script/script.js"></script>
 
 </head>
@@ -79,13 +87,13 @@
           <form class="modal__form">
             <label class ="modal__label">
               <span class="modal__label_text">Имя</span>
-              <input class ="modal__input" type="text" name="name">
+              <input class ="modal__input modal__input_name" type="text" name="name">
             </label>
             <label class ="modal__label">
               <span class="modal__label_text">Телефон</span>
-              <input class ="modal__input" type="text" name="phone">
+              <input class ="modal__input modal__input_tel" type="text" name="phone">
             </label>
-            <button class="modal__submit button__submit">Позвонить мне</button>
+            <button class="modal__submit button__submit" type="submit">Позвонить мне</button>
           </form>
             <button class="modal__close" type="button">
               <svg width="42" height="42" viewBox="0 0 42 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -291,32 +299,37 @@
     <section class="reviews" id="reviews">
       <div class="container">
         <h3 class="reviews__title heading-section">Отзывы посетителей</h3>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <div class="reviews__photo-wraper">
-              <div class="reviews__first-autor"></div>
-              <p class="reviews__autor">Макс Самойлов</p>
+        <div class="swiper">
+          <div class="reviews__list swiper-wrapper">
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__photo-wraper">
+                <div class="reviews__first-autor"></div>
+                <p class="reviews__autor">Макс Самойлов</p>
+              </div>
+              <p class="reviews__reviewer-text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR
+                очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
             </div>
-            <p class="reviews__reviewer-text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR
-              очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
-          </li>
-          <li class="reviews__item">
-            <div class="reviews__photo-wraper">
-              <div class="reviews__second-autor"></div>
-              <p class="reviews__autor">Оксана Григорьева</p>
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__photo-wraper">
+                <div class="reviews__second-autor"></div>
+                <p class="reviews__autor">Оксана Григорьева</p>
+              </div>
+              <p class="reviews__reviewer-text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился
+                корпоратив! У нас в городе больше нет подобных заведений</p>
             </div>
-            <p class="reviews__reviewer-text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился
-              корпоратив! У нас в городе больше нет подобных заведений</p>
-          </li>
-          <li class="reviews__item">
-            <div class="reviews__photo-wraper">
-              <div class="reviews__third-autor"></div>
-              <p class="reviews__autor">Никита Ященко</p>
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__photo-wraper">
+                <div class="reviews__third-autor"></div>
+                <p class="reviews__autor">Никита Ященко</p>
+              </div>
+              <p class="reviews__reviewer-text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление
+                комнаты в стиле звездных войн, попал в атмосферу космосаы</p>
             </div>
-            <p class="reviews__reviewer-text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление
-              комнаты в стиле звездных войн, попал в атмосферу космосаы</p>
-          </li>
-        </ul>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
     </section>
     <section class="faq">

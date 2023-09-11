@@ -4,9 +4,6 @@ const textWrapper = document.querySelectorAll('.faq__item_text-wrap');
 const navBtn = document.querySelector('.navigation__link-order');
 const modal = document.querySelector('.modal');
 
-console.log('navBtn :', navBtn);
-console.log('items :', items);
-console.log('buttons :', buttons);
 
 let heightWrapper = 0;
 textWrapper.forEach(elem => {
@@ -44,3 +41,4 @@ modal.addEventListener('click', (e) => {
     modal.classList.remove('modal_open');
   }
 });
+

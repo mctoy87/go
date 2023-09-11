@@ -16,7 +16,7 @@
     position: relative;
     display: flex;
     gap: 20px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .reviews__item:last-child {
@@ -43,6 +43,7 @@
 .reviews__reviewer-text {
     font-size: 20px;
     padding-top: 52px;
+    flex-basis: 680px;
 }
 
 .reviews__first-autor {
@@ -121,9 +122,14 @@
         font-size: 18px;
         line-height: 26px;
     }
+
+    /* .swiper {
+        width: 600px;
+        height: 300px;
+    } */
 }
 
-@media (max-width: 10400px) {
+@media (max-width: 1040px) {
     .reviews {
         padding-top: 30px;
         padding-bottom: 30px;
