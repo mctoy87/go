@@ -3,14 +3,16 @@ const swiper = new Swiper('.swiper', {
   loop: true,
 
 
+
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.button-left',
+    prevEl: '.button-right',
   },
 
   breakpoints: {
     320: {
-      centeredSlidesBounds: true,
+      
+      // centeredSlidesBounds: true,
       // slidesPerView: 2,
       // spaceBetween: 20
     },
@@ -30,6 +32,8 @@ const swiper = new Swiper('.swiper', {
 swiper.slides.forEach(element => {
   element.style.display = 'flex';
 });
+
+console.log(swiper.swipeDirection)
 
 // const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 // if(viewportWidth < 480) {
