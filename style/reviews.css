@@ -104,7 +104,13 @@
     flex-basis: 172px;
     }
 
+    /* .reviews__list {
+        justify-content: center;
+        align-items: center;
+    } */
+
     .reviews__item {
+        justify-content: center;
         gap: 38px;
         margin-bottom: 40px;
     }
@@ -121,6 +127,7 @@
     .reviews__reviewer-text {
         font-size: 18px;
         line-height: 26px;
+        flex-basis: 515px;
     }
 
     /* .swiper {
@@ -163,9 +170,10 @@
     .reviews__reviewer-text {
         font-size: 16px;
         line-height: 22px;
+        flex-basis: 390px;
     }
 }
-    
+
 @media (max-width: 660px) {
     .reviews {
         padding-top: 15px;
