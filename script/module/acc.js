@@ -16,10 +16,17 @@ buttons.forEach((btn, index) => {
   btn.addEventListener('click', ()=> {
     for (let i = 0; i < items.length; i++) {
       if (index === i) {
+        console.log(textWrapper[i].scrollHeight);
+        textWrapper[i].style.height =
+          items[i].classList.contains('faq__item_active') ?
+          '' : `${textWrapper[i].scrollHeight}px`;
+
+        /*Вариант, который позволяет сделать высоту айтема в аккордеоне как картотеку (постоянная по большему тексту)
+        
         textWrapper[i].style.height =
           items[i].classList.contains('faq__item_active') ?
           '' : `${heightWrapper}px`;
-
+        */
         items[i].classList.toggle('faq__item_active');
         btn.matches('.faq__button_purple') ?
           btn.classList.add('faq__button_purple-active') :

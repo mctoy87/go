@@ -47,11 +47,21 @@ const closeBurger =(duration, callback) => {
 }
 
 // При клике на иконку burger вызываем ф-ию openBurger
-btn.addEventListener("click", () => {
-  openBurger(duration, (progress) => {
-    const left = progress * distance;
-    popup.style.transform = `translateX(${left}px)`;
-  });
+btn.addEventListener("click", (e) => {
+  if(btn.classList.contains('navigation__menu-btn_active')){
+    console.log('УРАА');
+    btn.classList.remove('navigation__menu-btn_active')
+    closeBurger(duration, (progress) => {
+      const left = distance - progress * distance;
+      popup.style.transform = `translateX(${left}px)`;
+    });
+  } else {
+    btn.classList.add('navigation__menu-btn_active');
+    openBurger(duration, (progress) => {
+      const left = progress * distance;
+      popup.style.transform = `translateX(${left}px)`;
+    });
+  }
 });
 // При клике на ссылки в бургер меню вызываем ф-ию closeBurger
 burger.addEventListener('click', (e) => {
